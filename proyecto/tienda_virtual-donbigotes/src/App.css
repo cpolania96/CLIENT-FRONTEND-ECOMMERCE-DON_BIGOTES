@@ -1,38 +1,380 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  font-size: 16px; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+header {
+  width: 100%;
+  height: 190px; }
+  header .container-news {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: #23b2f8; }
+    header .container-news .news {
+      height: 100%;
+      width: 80%;
+      background-image: url(/src/img/banner-1025px@330x-100.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -3px; }
+  header .container-principal {
+    height: 54%;
+    background-color: #f8f8ff;
+    display: flex;
+    justify-content: center; }
+    header .container-principal .principal {
+      width: 66rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      header .container-principal .principal .container-first {
+        width: 100%;
+        height: 1.6rem;
+        display: flex;
+        justify-content: right; }
+        header .container-principal .principal .container-first .social {
+          height: 100%;
+          width: 12rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 8px;
+          padding-top: 4px; }
+          header .container-principal .principal .container-first .social .label {
+            height: 80%;
+            width: 40%;
+            border-right: 1px solid #3f3844;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            color: #3f3844; }
+          header .container-principal .principal .container-first .social .icon {
+            height: 100%;
+            width: 1.6rem;
+            margin-left: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+            header .container-principal .principal .container-first .social .icon svg {
+              height: auto;
+              width: 20px; }
+              header .container-principal .principal .container-first .social .icon svg .st0 {
+                fill: #3f3844; }
+      header .container-principal .principal .container-second {
+        height: 3.1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px; }
+        header .container-principal .principal .container-second .container-logo,
+        header .container-principal .principal .container-second .container-search,
+        header .container-principal .principal .container-second .container-tools {
+          height: 2rem; }
+        header .container-principal .principal .container-second .container-logo,
+        header .container-principal .principal .container-second .container-tools {
+          width: 20%; }
+        header .container-principal .principal .container-second .container-logo {
+          position: relative; }
+          header .container-principal .principal .container-second .container-logo .logo {
+            width: 6rem;
+            height: 6rem;
+            background-image: url(/src/img/logo_corporativo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90px;
+            position: absolute;
+            left: 3rem;
+            bottom: -28px; }
+        header .container-principal .principal .container-second .container-search {
+          width: 52%;
+          height: 80%;
+          display: flex;
+          justify-content: center; }
+          header .container-principal .principal .container-second .container-search .search {
+            height: 100%;
+            width: 30rem;
+            display: flex; }
+            header .container-principal .principal .container-second .container-search .search input,
+            header .container-principal .principal .container-second .container-search .search button {
+              border-top: 1px solid #F89922;
+              border-bottom: 1px solid #F89922;
+              background-color: #f8f8ff; }
+            header .container-principal .principal .container-second .container-search .search input {
+              width: 89%;
+              outline: none;
+              padding-left: 10px;
+              border-left: 1px solid #F89922;
+              border-right: none;
+              border-radius: 9px 0 0 9px;
+              font-size: 1.1rem;
+              font-family: 'Roboto', sans-serif;
+              color: #3F3844; }
+            header .container-principal .principal .container-second .container-search .search button {
+              width: 11%;
+              cursor: pointer;
+              border-right: 1px solid #F89922;
+              border-left: none;
+              border-radius: 0 9px 9px 0;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              header .container-principal .principal .container-second .container-search .search button svg {
+                width: 1.4rem;
+                height: auto; }
+                header .container-principal .principal .container-second .container-search .search button svg .st0 {
+                  fill: #F89922; }
+        header .container-principal .principal .container-second .container-tools {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 11px;
+          width: 19%;
+          height: 2.3rem; }
+          header .container-principal .principal .container-second .container-tools .profile,
+          header .container-principal .principal .container-second .container-tools .track,
+          header .container-principal .principal .container-second .container-tools .container-cart {
+            height: 100%; }
+          header .container-principal .principal .container-second .container-tools .profile,
+          header .container-principal .principal .container-second .container-tools .track {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 13%; }
+            header .container-principal .principal .container-second .container-tools .profile a,
+            header .container-principal .principal .container-second .container-tools .track a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: auto;
+              width: 27px; }
+              header .container-principal .principal .container-second .container-tools .profile a svg,
+              header .container-principal .principal .container-second .container-tools .track a svg {
+                width: 100%;
+                height: 100%; }
+                header .container-principal .principal .container-second .container-tools .profile a svg .st0,
+                header .container-principal .principal .container-second .container-tools .track a svg .st0 {
+                  fill: #F89922; }
+          header .container-principal .principal .container-second .container-tools .track a {
+            width: 20px; }
+          header .container-principal .principal .container-second .container-tools .container-cart {
+            width: 60%;
+            display: flex;
+            justify-content: center; }
+            header .container-principal .principal .container-second .container-tools .container-cart .cart {
+              height: 100%;
+              width: 100%;
+              background-color: #F89922;
+              border-radius: 4px;
+              display: flex;
+              cursor: pointer;
+              justify-content: space-between;
+              padding-right: 5px; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart:hover .icon-2 svg {
+                transform: rotate(0deg);
+                transition: 0.3s; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart .icon,
+              header .container-principal .principal .container-second .container-tools .container-cart .cart h6,
+              header .container-principal .principal .container-second .container-tools .container-cart .cart .icon-2 {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart .icon,
+              header .container-principal .principal .container-second .container-tools .container-cart .cart h6 {
+                width: 40%; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart .icon {
+                position: relative;
+                width: 27%;
+                padding-top: 3px; }
+                header .container-principal .principal .container-second .container-tools .container-cart .cart .icon svg {
+                  height: auto;
+                  width: 19px; }
+                  header .container-principal .principal .container-second .container-tools .container-cart .cart .icon svg .st0 {
+                    fill: #f8f8ff; }
+                header .container-principal .principal .container-second .container-tools .container-cart .cart .icon span {
+                  width: 14px;
+                  height: 14px;
+                  padding-right: 1px;
+                  padding-bottom: 1px;
+                  background-color: #1173a3;
+                  position: absolute;
+                  top: 4px;
+                  right: 0px;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-family: 'Roboto', sans-serif;
+                  color: #f8f8ff;
+                  font-size: 0.8rem; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart h6 {
+                font-family: 'Roboto', sans-serif;
+                color: #f8f8ff;
+                font-size: 1rem;
+                margin-right: 3px;
+                width: 56%; }
+              header .container-principal .principal .container-second .container-tools .container-cart .cart .icon-2 {
+                width: 12%; }
+                header .container-principal .principal .container-second .container-tools .container-cart .cart .icon-2 svg {
+                  height: auto;
+                  width: 12px;
+                  transform: rotate(180deg); }
+  header .container-menu {
+    height: 26%;
+    background-color: #F89922;
+    display: flex;
+    justify-content: center; }
+    header .container-menu menu {
+      width: 66rem;
+      height: 100%;
+      display: flex;
+      justify-content: space-between; }
+      header .container-menu menu .items {
+        width: 12%;
+        display: flex;
+        justify-content: center; }
+        header .container-menu menu .items h6 {
+          font-size: 1rem;
+          color: white;
+          font-family: 'Roboto', sans-serif; }
+      header .container-menu menu .list-menu {
+        width: 20%;
+        align-items: center; }
+        header .container-menu menu .list-menu .btn-menu {
+          width: 10rem;
+          height: 2.4em;
+          background-color: #1173a3;
+          border-radius: 6px;
+          display: flex;
+          cursor: pointer; }
+          header .container-menu menu .list-menu .btn-menu:hover .icon > svg {
+            transform: rotate(180deg);
+            transition: 0.3s; }
+          header .container-menu menu .list-menu .btn-menu .img,
+          header .container-menu menu .list-menu .btn-menu .label,
+          header .container-menu menu .list-menu .btn-menu .icon {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          header .container-menu menu .list-menu .btn-menu .img {
+            width: 30%; }
+            header .container-menu menu .list-menu .btn-menu .img svg {
+              height: auto;
+              width: 28px; }
+              header .container-menu menu .list-menu .btn-menu .img svg .st0 {
+                fill: white; }
+          header .container-menu menu .list-menu .btn-menu h6 {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            padding-left: 1px;
+            font-size: 1.2rem; }
+          header .container-menu menu .list-menu .btn-menu .icon {
+            width: 20%; }
+            header .container-menu menu .list-menu .btn-menu .icon svg {
+              height: auto;
+              width: 0.9rem;
+              margin-right: 9px; }
+              header .container-menu menu .list-menu .btn-menu .icon svg .st0 {
+                fill: white; }
+      header .container-menu menu .options:hover {
+        background-color: #dd810fdb;
+        cursor: pointer; }
+      header .container-menu menu .offert span,
+      header .container-menu menu .offert h6 {
+        height: 100%;
+        display: flex;
+        align-items: center; }
+      header .container-menu menu .offert span {
+        width: 20%;
+        justify-content: center; }
+        header .container-menu menu .offert span svg {
+          height: auto;
+          width: 1.6rem; }
+          header .container-menu menu .offert span svg .st0 {
+            fill: white; }
+      header .container-menu menu .offert h6 {
+        width: 53px;
+        margin-left: 7px; }
+      header .container-menu menu .blog:hover span > svg {
+        transform: rotate(180deg);
+        transition: 0.3s; }
+      header .container-menu menu .blog h6,
+      header .container-menu menu .blog span {
+        height: 100%;
+        display: flex;
+        align-items: center; }
+      header .container-menu menu .blog span {
+        width: 20%;
+        justify-content: center; }
+        header .container-menu menu .blog span svg {
+          height: auto;
+          width: 0.9rem;
+          margin-left: 4px; }
+          header .container-menu menu .blog span svg .st0 {
+            fill: white; }
+      header .container-menu menu .adopt {
+        align-items: center; }
+      header .container-menu menu .dogcast span,
+      header .container-menu menu .dogcast h6 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 4px; }
+      header .container-menu menu .dogcast span {
+        width: 28%;
+        justify-content: center; }
+        header .container-menu menu .dogcast span svg {
+          height: auto;
+          width: 1.7rem; }
+          header .container-menu menu .dogcast span svg .st0 {
+            fill: white; }
+      header .container-menu menu .dogcast h6 {
+        width: 69px; }
+      header .container-menu menu .contact {
+        width: 18%;
+        display: flex;
+        position: relative; }
+        header .container-menu menu .contact .icon,
+        header .container-menu menu .contact .label {
+          height: 100%;
+          display: flex;
+          justify-content: center; }
+        header .container-menu menu .contact .icon {
+          width: 25%; }
+          header .container-menu menu .contact .icon a {
+            width: 2.3rem;
+            cursor: pointer; }
+            header .container-menu menu .contact .icon a svg {
+              width: 100%;
+              height: 100%; }
+        header .container-menu menu .contact .mess {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          height: 19px;
+          width: 66px;
+          background-color: #F89922;
+          font-size: 0.7rem;
+          position: absolute;
+          color: black;
+          top: 56px;
+          left: -10px;
+          transform: translate(0px, -3px);
+          border-radius: 4px;
+          color: white; }
+        header .container-menu menu .contact .label {
+          width: 75%;
+          flex-direction: column; }
+          header .container-menu menu .contact .label h6 {
+            height: 40%;
+            width: 100%;
+            font-weight: 200;
+            padding-left: 4px; }
