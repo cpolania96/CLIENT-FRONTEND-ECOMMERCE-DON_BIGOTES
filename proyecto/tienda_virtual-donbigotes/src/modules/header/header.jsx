@@ -1,4 +1,6 @@
 import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import Cart from "./cart";
 import Menu from "./menu";
 import News from "./news";
@@ -39,6 +41,7 @@ const Header = () => {
         <div class="container-menu">
             <Menu />
         </div>
+        <CartWidget />
     </header>
     )
 }
