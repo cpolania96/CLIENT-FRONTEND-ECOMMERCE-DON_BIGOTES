@@ -4,11 +4,13 @@ import Header from './modules/header/header';
 import ItemListContainer from './modules/ItemListContainer/ItemListContainer';
 
 const App = () => {
+    const saludo = "Camilo";
+    const saludo_2 = "Pepe"
     return (
         <>
             <Header />
-            <ItemListContainer saludo="Camilo"/>
-            <ItemListContainer saludo="Pepe"/>
+            <ItemListContainer saludo={saludo}/>
+            <ItemListContainer saludo={saludo_2}/>
         </>
     )
 }

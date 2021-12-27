@@ -9,7 +9,6 @@ import Search from "./search";
 import Social from "./social";
 import Track from "./track";
 const Header = () => {
-
     return (
         <header>
             <News />
