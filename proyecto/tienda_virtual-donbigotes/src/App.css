@@ -652,30 +652,49 @@ main {
             align-items: center;
             background-color: #1173a3;
             border-radius: 0 0 12px 12px; }
+            main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount,
             main .container-content .banner-ofertas .container-cards .card .container-buy .buy {
               height: 75%;
-              width: 74%;
+              border-radius: 7px; }
+            main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount {
+              width: 30%;
+              margin-right: 10px;
+              background-color: white;
+              display: flex;
+              justify-content: space-between; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount button {
+                width: 46%;
+                border: none;
+                cursor: pointer;
+                border-radius: 7px 0 0 7px;
+                color: white;
+                font-size: 23px; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount .btnless {
+                background-color: #f89822c9; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount h6 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                color: #3F3844; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount .btnplus {
+                border-radius: 0 7px 7px 0;
+                background-color: #f89822c9; }
+            main .container-content .banner-ofertas .container-cards .card .container-buy .buy {
+              width: 50%;
               background-color: #F89922;
               border: none;
               display: flex;
               align-items: center;
               justify-content: center;
-              border-radius: 7px;
               cursor: pointer; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .buy span,
               main .container-content .banner-ofertas .container-cards .card .container-buy .buy h6 {
                 height: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .buy span {
-                width: 18%; }
-                main .container-content .banner-ofertas .container-cards .card .container-buy .buy span svg {
-                  width: 30px;
-                  height: auto; }
-                  main .container-content .banner-ofertas .container-cards .card .container-buy .buy span svg .st0 {
-                    fill: #f8f8ff; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .buy h6 {
+                justify-content: center;
                 width: 63%;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.1rem;

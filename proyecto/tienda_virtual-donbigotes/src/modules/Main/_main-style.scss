@@ -331,34 +331,55 @@ main {
                         align-items: center;
                         background-color: #1173a3;
                         border-radius: 0 0 12px 12px;
+                        .ItemCount,
                         .buy {
                             height: 75%;
-                            width: 74%;
+                            border-radius: 7px;
+                        }
+                        .ItemCount {
+                            width: 30%;
+                            margin-right: 10px;
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                width: 46%;
+                                border: none;
+                                cursor: pointer;
+                                border-radius: 7px 0 0 7px;
+                                color: white;
+                                font-size: 23px;
+                            }
+                            .btnless {
+                                background-color: #f89822c9;
+                            }
+                            h6 {
+                                width: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                @include roboto;
+                                font-size: 1rem;
+                                color: #3F3844;
+                            }
+                            .btnplus {
+                                border-radius: 0 7px 7px 0;
+                                background-color: #f89822c9;
+                            }
+                        }
+                        .buy {
+                            width: 50%;
                             background-color: #F89922;
                             border: none;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            border-radius: 7px;
                             cursor: pointer;
-                            span,
                             h6 {
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                            }
-                            span {
-                                width: 18%;
-                                svg {
-                                    width: 30px;
-                                    height: auto;
-                                    .st0 {
-                                        fill: #f8f8ff;
-                                    }
-                                }
-                            }
-                            h6 {
                                 width: 63%;
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.1rem;
