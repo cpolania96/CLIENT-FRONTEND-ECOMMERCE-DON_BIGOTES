@@ -378,3 +378,305 @@ header {
             width: 100%;
             font-weight: 200;
             padding-left: 4px; }
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F2F3F4; }
+  main .container-content {
+    width: 76%;
+    height: 1000px;
+    background-color: #f8f8ff; }
+    main .container-content .info-label {
+      width: 100%;
+      height: 42px;
+      padding: 0 18px;
+      display: flex;
+      justify-content: space-between; }
+      main .container-content .info-label .label {
+        width: 32%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        main .container-content .info-label .label span,
+        main .container-content .info-label .label h6 {
+          display: flex;
+          align-items: center; }
+        main .container-content .info-label .label span {
+          width: 20%;
+          height: 100%;
+          justify-content: center; }
+          main .container-content .info-label .label span svg {
+            height: auto;
+            width: 30px; }
+            main .container-content .info-label .label span svg .st0 {
+              fill: #F89922; }
+        main .container-content .info-label .label h6 {
+          width: 77%;
+          height: 72%;
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.85rem;
+          color: #3F3844;
+          border-right: 1px solid #F89922; }
+      main .container-content .info-label .l1 > span svg {
+        width: 30px; }
+      main .container-content .info-label .l2 > span svg {
+        width: 20px; }
+      main .container-content .info-label .last span > svg {
+        height: auto;
+        width: 24px; }
+      main .container-content .info-label .last h6 {
+        border-right: none; }
+    main .container-content .banner-carousell {
+      width: 100%;
+      height: 19rem;
+      border-top: 1px solid #3f384417;
+      border-bottom: 1px solid #3f384417;
+      display: flex;
+      justify-content: space-between;
+      position: relative; }
+      main .container-content .banner-carousell .selector {
+        height: 100%;
+        width: 85px;
+        border: none;
+        background-color: #f8f8ff;
+        cursor: pointer; }
+        main .container-content .banner-carousell .selector svg {
+          width: 37px;
+          height: auto; }
+          main .container-content .banner-carousell .selector svg .st0 {
+            fill: #1173a3;
+            -webkit-box-shadow: 1px 11px 32px 8px rgba(63, 56, 68, 0.66);
+            box-shadow: 1px 11px 32px 8px rgba(63, 56, 68, 0.66); }
+      main .container-content .banner-carousell .container-indicator {
+        width: 15%;
+        height: 2rem;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        main .container-content .banner-carousell .container-indicator .indicator {
+          height: 12px;
+          width: 12px;
+          border: 1px solid #1173a3;
+          border-radius: 50%; }
+        main .container-content .banner-carousell .container-indicator .i1 {
+          background-color: #1173a3; }
+    main .container-content .banner-cards,
+    main .container-content .menu-mascotas,
+    main .container-content .banner-ofertas {
+      width: 96%;
+      margin: auto;
+      border-bottom: 1px solid #3f384417; }
+    main .container-content .banner-cards {
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      main .container-content .banner-cards .card {
+        height: 3.8rem;
+        width: 14rem;
+        background-color: #1173a3;
+        border-radius: 7px; }
+    main .container-content .menu-mascotas {
+      height: 5.3rem; }
+      main .container-content .menu-mascotas h6,
+      main .container-content .menu-mascotas div {
+        display: flex;
+        align-items: center; }
+      main .container-content .menu-mascotas h6 {
+        height: 25px;
+        padding-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        color: #3F3844; }
+      main .container-content .menu-mascotas div {
+        display: flex;
+        height: 70%;
+        width: 86%;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center; }
+        main .container-content .menu-mascotas div a {
+          height: 46px;
+          width: 46px;
+          background-color: #F89922;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          main .container-content .menu-mascotas div a svg {
+            height: auto;
+            width: 33px; }
+    main .container-content .banner-ofertas {
+      height: 22rem; }
+      main .container-content .banner-ofertas .title,
+      main .container-content .banner-ofertas .container-cards {
+        width: 100%; }
+      main .container-content .banner-ofertas .title {
+        height: 38px;
+        display: flex;
+        justify-content: space-between; }
+        main .container-content .banner-ofertas .title h6,
+        main .container-content .banner-ofertas .title .selector {
+          height: 100%;
+          display: flex;
+          align-items: center; }
+        main .container-content .banner-ofertas .title h6 {
+          padding-left: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.9rem;
+          color: #3F3844; }
+        main .container-content .banner-ofertas .title .selector {
+          width: 82px;
+          justify-content: space-around;
+          margin-right: 5px; }
+          main .container-content .banner-ofertas .title .selector button {
+            width: 25px;
+            height: 25px;
+            border: none;
+            border-radius: 50%;
+            background-color: #1173a3;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          main .container-content .banner-ofertas .title .selector .at {
+            padding-right: 2px; }
+          main .container-content .banner-ofertas .title .selector .ad {
+            padding-left: 2px; }
+      main .container-content .banner-ofertas .container-cards {
+        height: 91%;
+        width: 145rem;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-left: 9px; }
+        main .container-content .banner-ofertas .container-cards .card {
+          height: 298px;
+          width: 13rem;
+          display: flex;
+          flex-direction: column;
+          border-radius: 0 0 16px 16px;
+          border: 1px solid #1173a3;
+          margin-right: 40px; }
+          main .container-content .banner-ofertas .container-cards .card .body {
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            position: relative; }
+            main .container-content .banner-ofertas .container-cards .card .body .info {
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              background-color: #1173a3;
+              right: 5px;
+              top: 5px;
+              border-radius: 50%;
+              display: flex;
+              align-content: center;
+              justify-content: center;
+              cursor: pointer; }
+              main .container-content .banner-ofertas .container-cards .card .body .info svg {
+                width: 16px;
+                height: 16px; }
+                main .container-content .banner-ofertas .container-cards .card .body .info svg .st0 {
+                  fill: white; }
+            main .container-content .banner-ofertas .container-cards .card .body .img,
+            main .container-content .banner-ofertas .container-cards .card .body .descript1,
+            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+              width: 100%; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript1,
+            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+              height: 19%; }
+            main .container-content .banner-ofertas .container-cards .card .body .img {
+              height: 62%; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .name,
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .rating,
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .content {
+              height: 33.3%;
+              width: 100%;
+              padding-left: 12px;
+              display: flex;
+              align-items: center; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .name {
+              font-size: 0.8rem;
+              font-family: 'Roboto', sans-serif;
+              color: #3F3844; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .star {
+              width: 80px; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript1 .content {
+              width: 3rem; }
+              main .container-content .banner-ofertas .container-cards .card .body .descript1 .content h6 {
+                background-color: #F89922;
+                font-size: 0.8rem;
+                width: 40px;
+                height: 17px;
+                font-family: 'Roboto', sans-serif;
+                color: #3F3844;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                color: #f8f8ff;
+                font-weight: normal; }
+            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+              height: 28%; }
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price,
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price-g,
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .discount {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
+                color: #3F3844; }
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .discount {
+                height: 25%;
+                text-decoration: line-through; }
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price {
+                font-size: 1.5rem;
+                height: 41%; }
+              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price-g {
+                font-size: 0.7rem;
+                height: 24%; }
+          main .container-content .banner-ofertas .container-cards .card .container-buy {
+            height: 16%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1173a3;
+            border-radius: 0 0 12px 12px; }
+            main .container-content .banner-ofertas .container-cards .card .container-buy .buy {
+              height: 75%;
+              width: 74%;
+              background-color: #F89922;
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 7px;
+              cursor: pointer; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .buy span,
+              main .container-content .banner-ofertas .container-cards .card .container-buy .buy h6 {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .buy span {
+                width: 18%; }
+                main .container-content .banner-ofertas .container-cards .card .container-buy .buy span svg {
+                  width: 30px;
+                  height: auto; }
+                  main .container-content .banner-ofertas .container-cards .card .container-buy .buy span svg .st0 {
+                    fill: #f8f8ff; }
+              main .container-content .banner-ofertas .container-cards .card .container-buy .buy h6 {
+                width: 63%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1rem;
+                color: #f8f8ff; }
