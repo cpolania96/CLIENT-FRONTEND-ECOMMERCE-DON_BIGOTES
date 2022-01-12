@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 * {
   margin: 0;
@@ -381,13 +383,13 @@ header {
 
 main {
   width: 100%;
-  height: 100%;
+  height: 400vh;
   display: flex;
   justify-content: center;
-  background-color: #F2F3F4; }
+  background-color: #f2f3f4; }
   main .container-content {
     width: 76%;
-    height: 1000px;
+    height: 98%;
     background-color: #f8f8ff; }
     main .container-content .info-label {
       width: 100%;
@@ -413,14 +415,14 @@ main {
             height: auto;
             width: 30px; }
             main .container-content .info-label .label span svg .st0 {
-              fill: #F89922; }
+              fill: #f89922; }
         main .container-content .info-label .label h6 {
           width: 77%;
           height: 72%;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 0.85rem;
-          color: #3F3844;
-          border-right: 1px solid #F89922; }
+          color: #3f3844;
+          border-right: 1px solid #f89922; }
       main .container-content .info-label .l1 > span svg {
         width: 30px; }
       main .container-content .info-label .l2 > span svg {
@@ -471,7 +473,7 @@ main {
           background-color: #1173a3; }
     main .container-content .banner-cards,
     main .container-content .menu-mascotas,
-    main .container-content .banner-ofertas {
+    main .container-content .banner {
       width: 96%;
       margin: auto;
       border-bottom: 1px solid #3f384417; }
@@ -494,9 +496,9 @@ main {
       main .container-content .menu-mascotas h6 {
         height: 25px;
         padding-left: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 0.9rem;
-        color: #3F3844; }
+        color: #3f3844; }
       main .container-content .menu-mascotas div {
         display: flex;
         height: 70%;
@@ -507,7 +509,7 @@ main {
         main .container-content .menu-mascotas div a {
           height: 46px;
           width: 46px;
-          background-color: #F89922;
+          background-color: #f89922;
           border-radius: 50%;
           display: flex;
           justify-content: center;
@@ -515,30 +517,30 @@ main {
           main .container-content .menu-mascotas div a svg {
             height: auto;
             width: 33px; }
-    main .container-content .banner-ofertas {
+    main .container-content .banner {
       height: 22rem; }
-      main .container-content .banner-ofertas .title,
-      main .container-content .banner-ofertas .container-cards {
+      main .container-content .banner .title,
+      main .container-content .banner .container-cards {
         width: 100%; }
-      main .container-content .banner-ofertas .title {
+      main .container-content .banner .title {
         height: 38px;
         display: flex;
         justify-content: space-between; }
-        main .container-content .banner-ofertas .title h6,
-        main .container-content .banner-ofertas .title .selector {
+        main .container-content .banner .title h6,
+        main .container-content .banner .title .selector {
           height: 100%;
           display: flex;
           align-items: center; }
-        main .container-content .banner-ofertas .title h6 {
+        main .container-content .banner .title h6 {
           padding-left: 10px;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 0.9rem;
-          color: #3F3844; }
-        main .container-content .banner-ofertas .title .selector {
+          color: #3f3844; }
+        main .container-content .banner .title .selector {
           width: 82px;
           justify-content: space-around;
           margin-right: 5px; }
-          main .container-content .banner-ofertas .title .selector button {
+          main .container-content .banner .title .selector button {
             width: 25px;
             height: 25px;
             border: none;
@@ -548,18 +550,17 @@ main {
             display: flex;
             justify-content: center;
             align-items: center; }
-          main .container-content .banner-ofertas .title .selector .at {
+          main .container-content .banner .title .selector .at {
             padding-right: 2px; }
-          main .container-content .banner-ofertas .title .selector .ad {
+          main .container-content .banner .title .selector .ad {
             padding-left: 2px; }
-      main .container-content .banner-ofertas .container-cards {
+      main .container-content .banner .container-cards {
         height: 91%;
         width: 145rem;
         display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding-left: 9px; }
-        main .container-content .banner-ofertas .container-cards .card {
+        overflow-x: hidden;
+        padding-left: 30px; }
+        main .container-content .banner .container-cards .card {
           height: 298px;
           width: 13rem;
           display: flex;
@@ -567,12 +568,12 @@ main {
           border-radius: 0 0 16px 16px;
           border: 1px solid #1173a3;
           margin-right: 40px; }
-          main .container-content .banner-ofertas .container-cards .card .body {
+          main .container-content .banner .container-cards .card .body {
             height: 84%;
             display: flex;
             flex-direction: column;
             position: relative; }
-            main .container-content .banner-ofertas .container-cards .card .body .info {
+            main .container-content .banner .container-cards .card .body .info {
               width: 16px;
               height: 16px;
               position: absolute;
@@ -584,118 +585,118 @@ main {
               align-content: center;
               justify-content: center;
               cursor: pointer; }
-              main .container-content .banner-ofertas .container-cards .card .body .info svg {
+              main .container-content .banner .container-cards .card .body .info svg {
                 width: 16px;
                 height: 16px; }
-                main .container-content .banner-ofertas .container-cards .card .body .info svg .st0 {
+                main .container-content .banner .container-cards .card .body .info svg .st0 {
                   fill: white; }
-            main .container-content .banner-ofertas .container-cards .card .body .img,
-            main .container-content .banner-ofertas .container-cards .card .body .descript1,
-            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+            main .container-content .banner .container-cards .card .body .img,
+            main .container-content .banner .container-cards .card .body .descript1,
+            main .container-content .banner .container-cards .card .body .descript2 {
               width: 100%; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript1,
-            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+            main .container-content .banner .container-cards .card .body .descript1,
+            main .container-content .banner .container-cards .card .body .descript2 {
               height: 19%; }
-            main .container-content .banner-ofertas .container-cards .card .body .img {
+            main .container-content .banner .container-cards .card .body .img {
               height: 62%; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .name,
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .rating,
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .content {
+            main .container-content .banner .container-cards .card .body .descript1 .name,
+            main .container-content .banner .container-cards .card .body .descript1 .rating,
+            main .container-content .banner .container-cards .card .body .descript1 .content {
               height: 33.3%;
               width: 100%;
               padding-left: 12px;
               display: flex;
               align-items: center; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .name {
+            main .container-content .banner .container-cards .card .body .descript1 .name {
               font-size: 0.8rem;
-              font-family: 'Roboto', sans-serif;
-              color: #3F3844; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .star {
+              font-family: "Roboto", sans-serif;
+              color: #3f3844; }
+            main .container-content .banner .container-cards .card .body .descript1 .star {
               width: 80px; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript1 .content {
+            main .container-content .banner .container-cards .card .body .descript1 .content {
               width: 3rem; }
-              main .container-content .banner-ofertas .container-cards .card .body .descript1 .content h6 {
-                background-color: #F89922;
+              main .container-content .banner .container-cards .card .body .descript1 .content h6 {
+                background-color: #f89922;
                 font-size: 0.8rem;
                 width: 40px;
                 height: 17px;
-                font-family: 'Roboto', sans-serif;
-                color: #3F3844;
+                font-family: "Roboto", sans-serif;
+                color: #3f3844;
                 border-radius: 2px;
                 display: flex;
                 justify-content: center;
                 color: #f8f8ff;
                 font-weight: normal; }
-            main .container-content .banner-ofertas .container-cards .card .body .descript2 {
+            main .container-content .banner .container-cards .card .body .descript2 {
               height: 28%; }
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price,
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price-g,
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .discount {
+              main .container-content .banner .container-cards .card .body .descript2 .price,
+              main .container-content .banner .container-cards .card .body .descript2 .price-g,
+              main .container-content .banner .container-cards .card .body .descript2 .discount {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                font-family: 'Roboto', sans-serif;
-                color: #3F3844; }
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .discount {
+                font-family: "Roboto", sans-serif;
+                color: #3f3844; }
+              main .container-content .banner .container-cards .card .body .descript2 .discount {
                 height: 25%;
                 text-decoration: line-through; }
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price {
+              main .container-content .banner .container-cards .card .body .descript2 .price {
                 font-size: 1.5rem;
                 height: 41%; }
-              main .container-content .banner-ofertas .container-cards .card .body .descript2 .price-g {
+              main .container-content .banner .container-cards .card .body .descript2 .price-g {
                 font-size: 0.7rem;
                 height: 24%; }
-          main .container-content .banner-ofertas .container-cards .card .container-buy {
+          main .container-content .banner .container-cards .card .container-buy {
             height: 16%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #1173a3;
             border-radius: 0 0 12px 12px; }
-            main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount,
-            main .container-content .banner-ofertas .container-cards .card .container-buy .buy {
+            main .container-content .banner .container-cards .card .container-buy .ItemCount,
+            main .container-content .banner .container-cards .card .container-buy .buy {
               height: 75%;
               border-radius: 7px; }
-            main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount {
+            main .container-content .banner .container-cards .card .container-buy .ItemCount {
               width: 30%;
               margin-right: 10px;
               background-color: white;
               display: flex;
               justify-content: space-between; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount button {
+              main .container-content .banner .container-cards .card .container-buy .ItemCount button {
                 width: 46%;
                 border: none;
                 cursor: pointer;
                 border-radius: 7px 0 0 7px;
                 color: white;
                 font-size: 23px; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount .btnless {
+              main .container-content .banner .container-cards .card .container-buy .ItemCount .btnless {
                 background-color: #f89822c9; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount h6 {
+              main .container-content .banner .container-cards .card .container-buy .ItemCount h6 {
                 width: 60%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1rem;
-                color: #3F3844; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .ItemCount .btnplus {
+                color: #3f3844; }
+              main .container-content .banner .container-cards .card .container-buy .ItemCount .btnplus {
                 border-radius: 0 7px 7px 0;
                 background-color: #f89822c9; }
-            main .container-content .banner-ofertas .container-cards .card .container-buy .buy {
+            main .container-content .banner .container-cards .card .container-buy .buy {
               width: 50%;
-              background-color: #F89922;
+              background-color: #f89922;
               border: none;
               display: flex;
               align-items: center;
               justify-content: center;
               cursor: pointer; }
-              main .container-content .banner-ofertas .container-cards .card .container-buy .buy h6 {
+              main .container-content .banner .container-cards .card .container-buy .buy h6 {
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 63%;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
                 font-size: 1.1rem;
                 color: #f8f8ff; }

@@ -1,12 +1,12 @@
 main {
     width: 100%;
-    height: 100%;
+    height: 400vh;
     display: flex;
     justify-content: center;
-    background-color: #F2F3F4;
+    background-color: #f2f3f4;
     .container-content {
         width: 76%;
-        height: 1000px;
+        height: 98%;
         background-color: #f8f8ff;
         .info-label {
             width: 100%;
@@ -33,31 +33,31 @@ main {
                         height: auto;
                         width: 30px;
                         .st0 {
-                            fill: #F89922;
+                            fill: #f89922;
                         }
                     }
                 }
                 h6 {
                     width: 77%;
                     height: 72%;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: "Roboto", sans-serif;
                     font-size: 0.85rem;
-                    color: #3F3844;
-                    border-right: 1px solid #F89922;
+                    color: #3f3844;
+                    border-right: 1px solid #f89922;
                 }
             }
-            .l1>span {
+            .l1 > span {
                 svg {
                     width: 30px;
                 }
             }
-            .l2>span {
+            .l2 > span {
                 svg {
                     width: 20px;
                 }
             }
             .last {
-                span>svg {
+                span > svg {
                     height: auto;
                     width: 24px;
                 }
@@ -114,7 +114,7 @@ main {
         }
         .banner-cards,
         .menu-mascotas,
-        .banner-ofertas {
+        .banner {
             width: 96%;
             margin: auto;
             border-bottom: 1px solid #3f384417;
@@ -141,9 +141,9 @@ main {
             h6 {
                 height: 25px;
                 padding-left: 10px;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
                 font-size: 0.9rem;
-                color: #3F3844;
+                color: #3f3844;
             }
             div {
                 display: flex;
@@ -155,7 +155,7 @@ main {
                 a {
                     height: 46px;
                     width: 46px;
-                    background-color: #F89922;
+                    background-color: #f89922;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
@@ -167,7 +167,7 @@ main {
                 }
             }
         }
-        .banner-ofertas {
+        .banner {
             height: 22rem;
             .title,
             .container-cards {
@@ -185,9 +185,9 @@ main {
                 }
                 h6 {
                     padding-left: 10px;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: "Roboto", sans-serif;
                     font-size: 0.9rem;
-                    color: #3F3844;
+                    color: #3f3844;
                 }
                 .selector {
                     width: 82px;
@@ -216,9 +216,8 @@ main {
                 height: 91%;
                 width: 145rem;
                 display: flex;
-                overflow-x: scroll;
-                overflow-y: hidden;
-                padding-left: 9px;
+                overflow-x: hidden;
+                padding-left: 30px;
                 .card {
                     height: 298px;
                     width: 13rem;
@@ -276,8 +275,8 @@ main {
                             }
                             .name {
                                 font-size: 0.8rem;
-                                font-family: 'Roboto', sans-serif;
-                                color: #3F3844;
+                                font-family: "Roboto", sans-serif;
+                                color: #3f3844;
                             }
                             .star {
                                 width: 80px;
@@ -285,12 +284,12 @@ main {
                             .content {
                                 width: 3rem;
                                 h6 {
-                                    background-color: #F89922;
+                                    background-color: #f89922;
                                     font-size: 0.8rem;
                                     width: 40px;
                                     height: 17px;
-                                    font-family: 'Roboto', sans-serif;
-                                    color: #3F3844;
+                                    font-family: "Roboto", sans-serif;
+                                    color: #3f3844;
                                     border-radius: 2px;
                                     display: flex;
                                     justify-content: center;
@@ -307,8 +306,8 @@ main {
                                 width: 100%;
                                 display: flex;
                                 justify-content: center;
-                                font-family: 'Roboto', sans-serif;
-                                color: #3F3844;
+                                font-family: "Roboto", sans-serif;
+                                color: #3f3844;
                             }
                             .discount {
                                 height: 25%;
@@ -360,7 +359,7 @@ main {
                                 align-items: center;
                                 @include roboto;
                                 font-size: 1rem;
-                                color: #3F3844;
+                                color: #3f3844;
                             }
                             .btnplus {
                                 border-radius: 0 7px 7px 0;
@@ -369,7 +368,7 @@ main {
                         }
                         .buy {
                             width: 50%;
-                            background-color: #F89922;
+                            background-color: #f89922;
                             border: none;
                             display: flex;
                             align-items: center;
@@ -381,7 +380,7 @@ main {
                                 align-items: center;
                                 justify-content: center;
                                 width: 63%;
-                                font-family: 'Roboto', sans-serif;
+                                font-family: "Roboto", sans-serif;
                                 font-size: 1.1rem;
                                 color: #f8f8ff;
                             }

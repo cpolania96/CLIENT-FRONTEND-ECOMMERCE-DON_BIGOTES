@@ -1,11 +1,9 @@
-import React from 'react'
+import { getFetch } from '../Main/data/mockProducts'
 
-function ItemListContainer({ saludo }) {
-    return (
-        <div>
-            Hola { saludo }
-        </div>
-    )
+function ItemListContainer() {
+   getFetch
+   .then(resp => {console.log(resp)})
+   .catch(err => {console.log(err)})
 }
 
 export default ItemListContainer

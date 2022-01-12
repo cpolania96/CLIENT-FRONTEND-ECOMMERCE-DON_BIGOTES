@@ -10,8 +10,6 @@ const App = () => {
     return (
         <>
             <Header />
-            <ItemListContainer saludo={saludo}/>
-            <ItemListContainer saludo={saludo_2}/>
             <Main />
         </>
     )
