@@ -1,6 +1,9 @@
 import React from 'react'
 
-function At() {
+function At({ cards }) {
+    const AtBtn = () => {
+        cards.setAttribute()
+    }
     return (
         <button class="at">
             <svg width="9" height="17" viewBox="0 0 9 17" fill="none"

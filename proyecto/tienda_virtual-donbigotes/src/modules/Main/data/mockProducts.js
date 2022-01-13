@@ -36,7 +36,44 @@ const productos = [
         priceG: (price, weight) => {
             return weight / price
         }
-    }]
+    },
+    {
+        id: 4,
+        photo: null,
+        name: "Shampoo brillo natural",
+        stars: 5,
+        weight: 150,
+        discount: false,
+        price: 35000,
+        priceG: (price, weight) => {
+            return weight / price
+        }
+    },
+    {
+        id: 5,
+        photo: null,
+        name: "Shampoo alivio",
+        stars: 5,
+        weight: 150,
+        discount: false,
+        price: 35000,
+        priceG: (price, weight) => {
+            return weight / price
+        }
+    },
+    {
+        id: 4,
+        photo: null,
+        name: "Gel cicatrizante de aloe",
+        stars: 5,
+        weight: 20,
+        discount: false,
+        price: 25000,
+        priceG: (price, weight) => {
+            return weight / price
+        }
+    }
+]
 
 export const getFetch = new Promise((resolve, reject) => {
     let condicion = true
