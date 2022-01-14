@@ -1,4 +1,4 @@
-import { getFetch } from '../Main/data/mockProducts'
+import { getFetch } from '../Main/data/mockProducts';
 import React, { useEffect, useState } from "react";
 import Card from '../Main/Card'
 

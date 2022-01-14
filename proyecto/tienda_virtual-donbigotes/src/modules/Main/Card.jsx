@@ -3,8 +3,10 @@ import IconCart from '../svg/IconCart'
 import IconInfo from '../svg/IconInfo'
 import IconStar from '../svg/IconStar'
 import ItemCount from './ItemCount'
+import { Link } from 'react-router-dom'
 
 function Card({ info }) {
+    const id = info.id
     const name = info.name
     const weight = info.weight
     const price = info.price
@@ -12,18 +14,21 @@ function Card({ info }) {
     return (
         <div class="card">
             <div class="body">
-                <div class="info">
-                    <IconInfo />
-                </div>
+                <Link to={`/detalle/${id}`}>
+                    <div class="info">
+                        <IconInfo />
+                    </div>
+                </Link>
                 <div class="img"></div>
                 <div class="descript1">
                     <div class="name">{name}</div>
                     <div class="rating">
                         <div class="star">
-                            <IconStar />
-                            <IconStar />
-                            <IconStar />
-                            <IconStar />
+                            <IconStar width="13" />
+                            <IconStar width="13" />
+                            <IconStar width="13" />
+                            <IconStar width="13" />
+                            <IconStar width="13" />
                         </div>
                     </div>
                     <div class="content">

@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { getFetch } from '../Main/data/mockProducts'
 import ItemCount from '../Main/ItemCount'
 import IconStar from '../svg/IconStar'
 
 function ContainerDetail() {
+    const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        getFetch
+            .then(resp => setProductos(resp))
+            .catch(err => console.log(err))
+            .finally(() => setLoading(false))
+    }, [])
+    const name = productos.name
+    const price = productos.price
+    const weight = productos.weight
     return (
         <main>
             <div className="container-content container-detail">
