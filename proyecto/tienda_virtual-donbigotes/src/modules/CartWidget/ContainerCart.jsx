@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CartWidget() {
+function ContainerCart() {
     return (
         <div>
 
@@ -8,4 +8,5 @@ function CartWidget() {
     )
 }
 
-export default CartWidget
+export default ContainerCart
+

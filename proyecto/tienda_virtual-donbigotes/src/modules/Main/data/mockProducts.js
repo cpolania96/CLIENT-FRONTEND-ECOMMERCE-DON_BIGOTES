@@ -1,4 +1,11 @@
 
+// const createLink = (nombre) => {
+//     const nombreToLowerCase = nombre.toLowerCase()
+//     const nombreConvert = nombreToLowerCase.normalize('NFD').replace(/[\u00C0-\u00FF]/g, '')
+//     const nombreArray = nombreConvert.split(' ')
+//     const link = nombreArray.join("+")
+//     return link
+// }
 
 const productos = [
     {
@@ -12,6 +19,7 @@ const productos = [
         priceG: (price, weight) => {
             return weight / price
         }
+
     },
     {
         id: 2,

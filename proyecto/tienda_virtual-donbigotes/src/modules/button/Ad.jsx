@@ -2,7 +2,6 @@ import React from 'react'
 
 function Ad({ Id }) {
     const ID = Id
-
     const AdBtn = (ID) => {
         ID.style.transform = "translate-x(-67%)"
     }
@@ -15,6 +14,7 @@ function Ad({ Id }) {
                     fill="white" />
             </svg>
         </button>
+
     )
 }
 

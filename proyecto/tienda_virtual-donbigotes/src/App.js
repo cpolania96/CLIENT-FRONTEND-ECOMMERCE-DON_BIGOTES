@@ -1,17 +1,21 @@
 import './App.css';
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './modules/header/header';
-import ItemListContainer from './modules/ItemListContainer/ItemListContainer';
 import Main from './modules/Main/Main';
+import ContainerDetail from "./modules/Detail/ContainerDetail";
 
 const App = () => {
-    const saludo = "Camilo";
-    const saludo_2 = "Pepe"
     return (
-        <>
+        <BrowserRouter >
             <Header />
-            <Main />
-        </>
+            <Routes >
+                <Route exact path='/' element={<Main />} />
+                <Route exact path='/detail/' element={<ContainerDetail />} />
+                <Route exact path='/' />
+            </Routes>
+
+        </BrowserRouter>
     )
 }
 

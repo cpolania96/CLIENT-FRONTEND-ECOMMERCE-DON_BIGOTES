@@ -704,3 +704,152 @@ main {
                   font-family: "Roboto", sans-serif;
                   font-size: 1.1rem;
                   color: #f8f8ff; }
+
+main .container-detail {
+  display: flex;
+  justify-content: center; }
+  main .container-detail .detail {
+    width: 90%;
+    height: 72vh;
+    display: flex;
+    margin-top: 29px; }
+    main .container-detail .detail .photo,
+    main .container-detail .detail .info {
+      height: 100%;
+      width: 50%; }
+    main .container-detail .detail .photo {
+      border-right: 1px solid #f89922; }
+    main .container-detail .detail .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      main .container-detail .detail .info .rows {
+        width: 88%;
+        height: 13%;
+        font-family: 'Roboto', sans-serif;
+        color: #3f3844; }
+      main .container-detail .detail .info .r1 {
+        font-size: 1.8rem;
+        height: 17%;
+        font-weight: bold; }
+      main .container-detail .detail .info .r2 {
+        font-size: 1.3rem;
+        height: 9%;
+        display: flex;
+        flex-direction: column; }
+        main .container-detail .detail .info .r2 h6 {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          align-items: center; }
+      main .container-detail .detail .info .r3 {
+        height: 8%;
+        display: flex; }
+        main .container-detail .detail .info .r3 .container-star {
+          width: 38%; }
+        main .container-detail .detail .info .r3 .rate {
+          width: 20%;
+          font-family: 'Roboto', sans-serif;
+          display: flex;
+          align-items: center;
+          font-weight: bold; }
+      main .container-detail .detail .info .r4 {
+        display: flex; }
+        main .container-detail .detail .info .r4 h6 {
+          height: 100%;
+          width: 35%;
+          display: flex;
+          align-items: center;
+          color: #232025; }
+        main .container-detail .detail .info .r4 .price {
+          font-size: 2rem; }
+        main .container-detail .detail .info .r4 .label {
+          font-size: 1.2rem; }
+      main .container-detail .detail .info .r5 {
+        height: 24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        main .container-detail .detail .info .r5 h5,
+        main .container-detail .detail .info .r5 h6,
+        main .container-detail .detail .info .r5 .container-button {
+          display: flex;
+          align-items: center; }
+        main .container-detail .detail .info .r5 h5,
+        main .container-detail .detail .info .r5 h6 {
+          height: 25%; }
+        main .container-detail .detail .info .r5 .container-button {
+          height: 50%;
+          padding-left: 18px; }
+          main .container-detail .detail .info .r5 .container-button button {
+            width: 56px;
+            height: 44px;
+            border: none;
+            background-color: #1173a3;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer; }
+      main .container-detail .detail .info .r6 {
+        height: 7%;
+        display: flex; }
+        main .container-detail .detail .info .r6 .label {
+          width: 72%;
+          display: flex;
+          align-items: center; }
+        main .container-detail .detail .info .r6 button {
+          width: 64px;
+          border: none;
+          border-radius: 4px;
+          color: white;
+          background-color: #1173a3;
+          font-family: 'Roboto', sans-serif;
+          cursor: pointer; }
+      main .container-detail .detail .info .r7 {
+        display: flex;
+        justify-content: center;
+        margin-top: 29px; }
+        main .container-detail .detail .info .r7 .ItemCount,
+        main .container-detail .detail .info .r7 .add-cart {
+          height: 100%;
+          border-radius: 7px; }
+        main .container-detail .detail .info .r7 .ItemCount {
+          width: 22%;
+          margin-right: 10px;
+          background-color: white;
+          display: flex;
+          justify-content: space-between; }
+          main .container-detail .detail .info .r7 .ItemCount button {
+            width: 46%;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px 0 0 7px;
+            color: white;
+            font-size: 23px; }
+          main .container-detail .detail .info .r7 .ItemCount .btnless {
+            background-color: #f89922; }
+          main .container-detail .detail .info .r7 .ItemCount h6 {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #3f3844; }
+          main .container-detail .detail .info .r7 .ItemCount .btnplus {
+            border-radius: 0 7px 7px 0;
+            background-color: #f89922; }
+        main .container-detail .detail .info .r7 .add-cart {
+          height: 100%;
+          width: 66%; }
+          main .container-detail .detail .info .r7 .add-cart button {
+            width: 100%;
+            height: 100%;
+            border: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            background-color: #f89922;
+            border-radius: 7px;
+            cursor: pointer; }

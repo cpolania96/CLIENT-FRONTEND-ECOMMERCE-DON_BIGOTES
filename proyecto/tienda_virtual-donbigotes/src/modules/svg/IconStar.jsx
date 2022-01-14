@@ -1,8 +1,8 @@
 import React from 'react'
 
-function IconStar() {
+function IconStar({ width }) {
     return (
-        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+        <svg width={width} height="auto" viewBox="0 0 12 11" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_426:256)">
                 <path
