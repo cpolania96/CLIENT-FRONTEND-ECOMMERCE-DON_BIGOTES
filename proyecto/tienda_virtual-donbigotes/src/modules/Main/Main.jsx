@@ -20,9 +20,6 @@ function Main() {
                 <MenuMascotas />
                 <ContainerBanner TITLE={TITLE1} />
                 <ContainerBanner TITLE={TITLE2} />
-                <BannerDogCast />
-                <Posts />
-                <Social />
             </div>
         </main>
     )
