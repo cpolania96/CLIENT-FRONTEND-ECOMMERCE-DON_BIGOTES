@@ -858,18 +858,15 @@ main .container-detail {
 
 .BannerDogCast {
   width: 100%;
-  height: 9rem;
-  background-color: yellow; }
+  height: 9rem; }
 
 .posts {
   width: 100%;
-  height: 14rem;
-  background-color: blue; }
+  height: 14rem; }
 
 .social {
   width: 100%;
-  height: 6rem;
-  background-color: red; }
+  height: 6rem; }
 
 .footer {
   width: 100%;
