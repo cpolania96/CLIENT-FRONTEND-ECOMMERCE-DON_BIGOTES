@@ -1,7 +1,9 @@
 main {
     .container-detail {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
         .detail {
             width: 90%;
             height: 72vh;

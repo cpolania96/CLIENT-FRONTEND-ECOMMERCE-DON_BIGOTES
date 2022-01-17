@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './modules/header/header';
 import Main from './modules/Main/Main';
 import ContainerDetail from "./modules/Detail/ContainerDetail";
+import Footer from './modules/Footer/Footer';
 
 const App = () => {
     return (
@@ -14,8 +15,9 @@ const App = () => {
                 <Route exact path='/detalle/' element={<ContainerDetail />} />
                 <Route exact path='/' />
             </Routes>
-
+            <Footer />
         </BrowserRouter>
+
     )
 }
 
