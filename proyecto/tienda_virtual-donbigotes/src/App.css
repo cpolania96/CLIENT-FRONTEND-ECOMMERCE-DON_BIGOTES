@@ -357,6 +357,10 @@ header {
             header .container-menu menu .contact .icon a svg {
               width: 100%;
               height: 100%; }
+              header .container-menu menu .contact .icon a svg .st01 {
+                fill: white; }
+              header .container-menu menu .contact .icon a svg .st02 {
+                fill: #1fb141; }
         header .container-menu menu .contact .mess {
           display: none;
           justify-content: center;
@@ -710,10 +714,12 @@ main .container-detail {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column; }
-  main .container-detail .detail {
+  main .container-detail .detail,
+  main .container-detail .container-comments {
     width: 90%;
     height: 72vh;
-    display: flex;
+    display: flex; }
+  main .container-detail .detail {
     margin-top: 29px; }
     main .container-detail .detail .photo,
     main .container-detail .detail .info {
@@ -855,6 +861,65 @@ main .container-detail {
             background-color: #f89922;
             border-radius: 7px;
             cursor: pointer; }
+  main .container-detail .container-comments {
+    padding-top: 47px;
+    height: 36vh; }
+    main .container-detail .container-comments .comments,
+    main .container-detail .container-comments .info-product {
+      width: 50%;
+      height: 100%; }
+    main .container-detail .container-comments .comments span,
+    main .container-detail .container-comments .comments h6 {
+      display: flex;
+      align-items: center; }
+    main .container-detail .container-comments .comments span {
+      height: 100%;
+      width: 20px;
+      justify-content: center;
+      margin-right: 6px; }
+      main .container-detail .container-comments .comments span svg {
+        width: 100%; }
+        main .container-detail .container-comments .comments span svg .st0 {
+          fill: #3f3844; }
+    main .container-detail .container-comments .comments h6 {
+      height: 2rem;
+      font-family: 'Roboto', sans-serif;
+      padding-left: 26px;
+      font-size: 1rem;
+      color: #3f3844;
+      font-weight: bold; }
+    main .container-detail .container-comments .comments .comments-body {
+      width: 90%;
+      height: 78%;
+      background-color: blue; }
+    main .container-detail .container-comments .info-product span,
+    main .container-detail .container-comments .info-product h6 {
+      display: flex;
+      align-items: center; }
+    main .container-detail .container-comments .info-product span {
+      height: 100%;
+      width: 20px;
+      justify-content: center;
+      margin-right: 6px; }
+      main .container-detail .container-comments .info-product span svg {
+        width: 100%; }
+        main .container-detail .container-comments .info-product span svg .st0 {
+          fill: #3f3844; }
+    main .container-detail .container-comments .info-product h6 {
+      height: 2rem;
+      font-family: 'Roboto', sans-serif;
+      padding-left: 26px;
+      font-size: 1rem;
+      color: #3f3844;
+      font-weight: bold; }
+    main .container-detail .container-comments .info-product .info {
+      width: 90%;
+      height: 78%;
+      background-color: blue; }
+      main .container-detail .container-comments .info-product .info .info-title {
+        width: 100%;
+        height: 36px;
+        background-color: red; }
 
 .BannerDogCast {
   width: 100%;
