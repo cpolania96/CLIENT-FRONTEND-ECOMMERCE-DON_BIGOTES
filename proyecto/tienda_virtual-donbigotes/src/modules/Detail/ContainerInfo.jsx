@@ -4,7 +4,7 @@ import IconMessages from '../svg/IconMessages'
 
 function ContainerInfo() {
     const titleInfo = "Información del producto"
-    const titleComments = "Opiniones y comentarios"
+    const titleComments = "Opiniones y preguntas"
     let productInfo = "info"
     return (
         <div className="container-comments">
@@ -19,11 +19,13 @@ function ContainerInfo() {
                 <h6><span><IconInfo /></span>{titleInfo}</h6>
                 <div className='info'>
                     <div className='info-title'>
-                        <div className="title"></div>
-                        <div className="title"></div>
-                        <div className="title"></div>
+                        <div className="title">Beneficios</div>
+                        <div className="title">Descripción</div>
+                        <div className="title">Detalles</div>
                     </div>
-                    <div></div>
+                    <div className='container-info'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed sapiente suscipit sunt alias quo earum porro delectus itaque est hic iusto, ut pariatur eos maiores rem! Quas, eius ab.
+                    </div>
                 </div>
             </div>
         </div>
