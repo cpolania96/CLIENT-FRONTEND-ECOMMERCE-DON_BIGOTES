@@ -886,8 +886,7 @@ main .container-detail {
       font-family: 'Roboto', sans-serif;
       padding-left: 26px;
       font-size: 1rem;
-      color: #3f3844;
-      font-weight: bold; }
+      color: #3f3844; }
     main .container-detail .container-comments .comments .comments-body {
       width: 90%;
       height: 78%;
@@ -943,7 +942,8 @@ main .container-detail {
         height: 80%;
         border-top: 1px solid #1173a3;
         font-family: 'Roboto', sans-serif;
-        color: #3f3844; }
+        color: #3f3844;
+        padding: 10px; }
 
 .BannerDogCast {
   width: 100%;

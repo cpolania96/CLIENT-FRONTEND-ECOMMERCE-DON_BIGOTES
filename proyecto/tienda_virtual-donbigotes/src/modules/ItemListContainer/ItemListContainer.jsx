@@ -1,6 +1,6 @@
 import { getFetch } from '../Main/data/mockProducts';
 import React, { useEffect, useState } from "react";
-import Card from '../Main/Card'
+import ItemList from './ItemList';
 
 
 function ItemListContainer() {
@@ -12,7 +12,9 @@ function ItemListContainer() {
          .catch(err => console.log(err))
          .finally(() => setLoading(false))
    }, [])
-   return productos.map(prod => <Card info={prod} />)
+   return (
+      <ItemList data={productos} />
+   )
 }
 
 export default ItemListContainer
