@@ -26,7 +26,7 @@ const productos = [{
     stars: 5,
     weight: 20,
     discount: false,
-    price: 15000,
+    price: new Intl.NumberFormat("de-DE").format(15000),
     priceG: (price, weight) => {
         return weight / price
     }
@@ -38,7 +38,7 @@ const productos = [{
     stars: 5,
     weight: 15,
     discount: false,
-    price: 18000,
+    price: new Intl.NumberFormat("de-DE").format(18000),
     priceG: (price, weight) => {
         return weight / price
     }
@@ -50,7 +50,7 @@ const productos = [{
     stars: 5,
     weight: 150,
     discount: false,
-    price: 35000,
+    price: new Intl.NumberFormat("de-DE").format(35000),
     priceG: (price, weight) => {
         return weight / price
     }
@@ -62,7 +62,7 @@ const productos = [{
     stars: 5,
     weight: 150,
     discount: false,
-    price: 35000,
+    price: new Intl.NumberFormat("de-DE").format(35000),
     priceG: (price, weight) => {
         return weight / price
     }
@@ -74,7 +74,8 @@ const productos = [{
     stars: 5,
     weight: 20,
     discount: false,
-    price: 25000,
+    price: new Intl.NumberFormat("de-DE").format(25000),
+
     priceG: (price, weight) => {
         return weight / price
     }
