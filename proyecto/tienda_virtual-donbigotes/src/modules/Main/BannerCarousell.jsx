@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function BannerCarousell() {
+
     return (
         <div class="banner-carousell">
             <button class="selector selector-iz">

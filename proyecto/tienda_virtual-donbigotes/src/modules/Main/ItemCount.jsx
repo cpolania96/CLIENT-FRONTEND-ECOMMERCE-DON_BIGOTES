@@ -2,12 +2,22 @@ import React from 'react'
 import { useState } from 'react'
 
 function ItemCount() {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
+    const [disable, setDisable] = useState(false)
+    const buttonDisable = (ID) => this.querySelector(ID).disable
     const handleCount = () => {
-        setCount(count+1)
+        setCount(count + 1)
     }
     const lessCount = () => {
-        setCount(count-1)
+        if (count <= 1) {
+            setDisable(true)
+        }
+        else {
+            setCount(count - 1)
+        }
+    }
+    if (disable == true) {
+        buttonDisable("btnless")
     }
     return (
         <div class="ItemCount">

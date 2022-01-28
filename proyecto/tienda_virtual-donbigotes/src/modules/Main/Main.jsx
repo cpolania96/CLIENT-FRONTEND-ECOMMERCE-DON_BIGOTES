@@ -1,7 +1,4 @@
 import React from 'react'
-import BannerDogCast from '../BannerDogCast/BannerDogCast'
-import Posts from '../Posts/Posts'
-import Social from '../social/Social'
 import BannerCards from './BannerCards'
 import BannerCarousell from './BannerCarousell'
 import ContainerBanner from './ContainerBanner'
