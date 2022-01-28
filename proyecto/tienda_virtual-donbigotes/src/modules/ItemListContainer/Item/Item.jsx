@@ -1,26 +1,26 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../Context/cartContext'
-import IconCart from '../svg/IconCart'
-import IconInfo from '../svg/IconInfo'
-import IconStar from '../svg/IconStar'
-import ItemCount from './ItemCount'
+import { CartContext } from '../../../Context/cartContext'
+import IconCart from '../../svg/IconCart'
+import IconInfo from '../../svg/IconInfo'
+import IconStar from '../../svg/IconStar'
+import ItemCount from '../../Main/ItemCount'
 import { Link } from 'react-router-dom'
 
-function Card({ info }) {
+function Item({ item }) {
     // Obtener contexto
     const { cartList, agregarAlCarrito } = useContext(CartContext)
     // Función para agregar productos al carrito
     function onAdd(cant) {
-        agregarAlCarrito({ ...info, cantidad: cant })
+        agregarAlCarrito({ ...item, cantidad: cant })
     }
     console.log(cartList);
     // Constructor de la tarjeta
-    const id = info.id
-    const name = info.name
-    const photo = info.photo
-    const weight = info.weight
-    const price = info.price
-    const priceG = info.priceG()
+    const id = item.id
+    const name = item.name
+    const photo = item.photo
+    const weight = item.weight
+    const price = item.price
+    const priceG = item.priceG()
     return (
         <div class="card">
             <div class="body">
@@ -65,4 +65,4 @@ function Card({ info }) {
     )
 }
 
-export default Card
+export default Item

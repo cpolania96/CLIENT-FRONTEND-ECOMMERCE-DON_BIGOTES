@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getFetch } from '../../Main/data/mockProducts';
-import ContainerDetail from '../ContainerDetail';
+import { getFetch } from '../Main/data/mockProducts';
+import ContainerDetail from '../ItemDetailContainer/ContainerDetail';
 
 function ItemDetailContainer() {
     const [producto, setProducto] = useState({})

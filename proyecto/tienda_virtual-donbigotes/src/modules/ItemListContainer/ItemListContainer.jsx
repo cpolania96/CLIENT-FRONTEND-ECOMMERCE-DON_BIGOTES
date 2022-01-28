@@ -1,6 +1,6 @@
 import { getFetch } from '../Main/data/mockProducts';
 import React, { useEffect, useState } from "react";
-import ItemList from './ItemList';
+import ItemList from './ItemList/ItemList';
 
 
 function ItemListContainer() {
@@ -13,7 +13,7 @@ function ItemListContainer() {
          .finally(() => setLoading(false))
    }, [])
    return (
-      <ItemList data={productos} />
+      <ItemList items={productos} />
    )
 }
 
