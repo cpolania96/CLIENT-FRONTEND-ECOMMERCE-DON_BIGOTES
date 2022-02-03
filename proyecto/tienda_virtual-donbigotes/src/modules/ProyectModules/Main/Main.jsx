@@ -15,7 +15,7 @@ function Main() {
                 <BannerCarousell />
                 <BannerCards />
                 <MenuMascotas />
-                <ContainerBanner TITLE={TITLE1} />
+                {/* <ContainerBanner TITLE={TITLE1} /> */}
                 <ContainerBanner TITLE={TITLE2} />
             </div>
         </main>
