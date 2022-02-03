@@ -3,10 +3,10 @@ import CartWidget from "../../CartWidget/CartWidget";
 import Cart from "../../CartWidget/cart";
 import Menu from "./menu";
 import News from "./news";
-import Profile from "./profile";
+import Profile from "../../../assets/svg/profile";
 import Search from "./search";
-import Social from "./social";
-import Track from "./track";
+import Social from "../../../assets/svg/social";
+import Track from "../../../assets/svg/track";
 import { Link } from "react-router-dom";
 const Header = () => {
     return (
