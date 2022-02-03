@@ -267,12 +267,12 @@ header {
         display: flex;
         justify-content: center;
         menu {
-            width: 66rem;
+            width: 54rem;
             height: 100%;
             display: flex;
             justify-content: space-between;
             .items {
-                width: 12%;
+                width: 22%;
                 display: flex;
                 justify-content: center;
                 h6 {
@@ -336,139 +336,10 @@ header {
                 }
             }
             .options {
+                align-items: center;
                 &:hover {
                     background-color: #dd810fdb;
                     cursor: pointer;
-                }
-            }
-            .offert {
-                span,
-                h6 {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                }
-                span {
-                    width: 20%;
-                    justify-content: center;
-                    svg {
-                        height: auto;
-                        width: 1.6rem;
-                        .st0 {
-                            fill: white;
-                        }
-                    }
-                }
-                h6 {
-                    width: 53px;
-                    margin-left: 7px;
-                }
-            }
-            .blog {
-                &:hover {
-                    span > svg {
-                        transform: rotate(180deg);
-                        transition: 0.3s;
-                    }
-                }
-                h6,
-                span {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                }
-                span {
-                    width: 20%;
-                    justify-content: center;
-                    svg {
-                        height: auto;
-                        width: 0.9rem;
-                        margin-left: 4px;
-                        .st0 {
-                            fill: white;
-                        }
-                    }
-                }
-            }
-            .adopt {
-                align-items: center;
-            }
-            .dogcast {
-                span,
-                h6 {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    margin-left: 4px;
-                }
-                span {
-                    width: 28%;
-                    justify-content: center;
-                    svg {
-                        height: auto;
-                        width: 1.7rem;
-                        .st0 {
-                            fill: white;
-                        }
-                    }
-                }
-                h6 {
-                    width: 69px;
-                }
-            }
-            .contact {
-                width: 18%;
-                display: flex;
-                position: relative;
-                .icon,
-                .label {
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                }
-                .icon {
-                    width: 25%;
-                    a {
-                        width: 2.3rem;
-                        cursor: pointer;
-                        svg {
-                            width: 100%;
-                            height: 100%;
-                            .st01 {
-                                fill: white;
-                            }
-                            .st02 {
-                                fill: #1fb141;
-                            }
-                        }
-                    }
-                }
-                .mess {
-                    // Falta por script para mostrar con hover a icon
-                    display: none;
-                    justify-content: center;
-                    align-items: center;
-                    height: 19px;
-                    width: 66px;
-                    background-color: $color-principal;
-                    font-size: 0.7rem;
-                    position: absolute;
-                    color: black;
-                    top: 56px;
-                    left: -10px;
-                    transform: translate(0px, -3px);
-                    border-radius: 4px;
-                    color: white;
-                }
-                .label {
-                    width: 75%;
-                    flex-direction: column;
-                    h6 {
-                        height: 40%;
-                        width: 100%;
-                        font-weight: 200;
-                        padding-left: 4px;
-                    }
                 }
             }
         }

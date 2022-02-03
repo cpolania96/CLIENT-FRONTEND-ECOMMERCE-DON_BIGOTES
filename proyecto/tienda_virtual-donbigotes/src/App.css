@@ -233,12 +233,12 @@ header {
     display: flex;
     justify-content: center; }
     header .container-menu menu {
-      width: 66rem;
+      width: 54rem;
       height: 100%;
       display: flex;
       justify-content: space-between; }
       header .container-menu menu .items {
-        width: 12%;
+        width: 22%;
         display: flex;
         justify-content: center; }
         header .container-menu menu .items h6 {
@@ -286,104 +286,11 @@ header {
               margin-right: 9px; }
               header .container-menu menu .list-menu .btn-menu .icon svg .st0 {
                 fill: white; }
-      header .container-menu menu .options:hover {
-        background-color: #dd810fdb;
-        cursor: pointer; }
-      header .container-menu menu .offert span,
-      header .container-menu menu .offert h6 {
-        height: 100%;
-        display: flex;
+      header .container-menu menu .options {
         align-items: center; }
-      header .container-menu menu .offert span {
-        width: 20%;
-        justify-content: center; }
-        header .container-menu menu .offert span svg {
-          height: auto;
-          width: 1.6rem; }
-          header .container-menu menu .offert span svg .st0 {
-            fill: white; }
-      header .container-menu menu .offert h6 {
-        width: 53px;
-        margin-left: 7px; }
-      header .container-menu menu .blog:hover span > svg {
-        transform: rotate(180deg);
-        transition: 0.3s; }
-      header .container-menu menu .blog h6,
-      header .container-menu menu .blog span {
-        height: 100%;
-        display: flex;
-        align-items: center; }
-      header .container-menu menu .blog span {
-        width: 20%;
-        justify-content: center; }
-        header .container-menu menu .blog span svg {
-          height: auto;
-          width: 0.9rem;
-          margin-left: 4px; }
-          header .container-menu menu .blog span svg .st0 {
-            fill: white; }
-      header .container-menu menu .adopt {
-        align-items: center; }
-      header .container-menu menu .dogcast span,
-      header .container-menu menu .dogcast h6 {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        margin-left: 4px; }
-      header .container-menu menu .dogcast span {
-        width: 28%;
-        justify-content: center; }
-        header .container-menu menu .dogcast span svg {
-          height: auto;
-          width: 1.7rem; }
-          header .container-menu menu .dogcast span svg .st0 {
-            fill: white; }
-      header .container-menu menu .dogcast h6 {
-        width: 69px; }
-      header .container-menu menu .contact {
-        width: 18%;
-        display: flex;
-        position: relative; }
-        header .container-menu menu .contact .icon,
-        header .container-menu menu .contact .label {
-          height: 100%;
-          display: flex;
-          justify-content: center; }
-        header .container-menu menu .contact .icon {
-          width: 25%; }
-          header .container-menu menu .contact .icon a {
-            width: 2.3rem;
-            cursor: pointer; }
-            header .container-menu menu .contact .icon a svg {
-              width: 100%;
-              height: 100%; }
-              header .container-menu menu .contact .icon a svg .st01 {
-                fill: white; }
-              header .container-menu menu .contact .icon a svg .st02 {
-                fill: #1fb141; }
-        header .container-menu menu .contact .mess {
-          display: none;
-          justify-content: center;
-          align-items: center;
-          height: 19px;
-          width: 66px;
-          background-color: #F89922;
-          font-size: 0.7rem;
-          position: absolute;
-          color: black;
-          top: 56px;
-          left: -10px;
-          transform: translate(0px, -3px);
-          border-radius: 4px;
-          color: white; }
-        header .container-menu menu .contact .label {
-          width: 75%;
-          flex-direction: column; }
-          header .container-menu menu .contact .label h6 {
-            height: 40%;
-            width: 100%;
-            font-weight: 200;
-            padding-left: 4px; }
+        header .container-menu menu .options:hover {
+          background-color: #dd810fdb;
+          cursor: pointer; }
 
 main {
   width: 100%;

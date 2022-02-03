@@ -2,11 +2,8 @@ import OffertIco from "../svg/icon-offert";
 
 const BtnOfert = () => {
     return (
-        <div className="items options offert">
-            <span>
-                <OffertIco />
-            </span>
-            <h6 id="opcion2">Ofertas</h6>
+        <div className="items options">
+            <h6 id="opcion2">Limpiadores corporales</h6>
         </div>
     )
 }

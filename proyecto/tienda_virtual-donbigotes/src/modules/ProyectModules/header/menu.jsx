@@ -9,11 +9,9 @@ const Menu = () => {
     return (
         <menu>
             <BtnMasc />
-            {/* <BtnOfert /> */}
-            {/* <BtnBlog /> */}
-            {/* <BtnAdopt /> */}
-            {/* <BtnDogcast /> */}
-            {/* <BtnContact /> */}
+            <BtnOfert />
+            <BtnBlog />
+            <BtnAdopt />
         </menu>
     )
 }
