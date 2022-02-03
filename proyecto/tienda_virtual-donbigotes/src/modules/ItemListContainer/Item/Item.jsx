@@ -49,7 +49,7 @@ function Item({ item }) {
                 <div className="descript2">
                     <div className="discount"></div>
                     <div className="price">${price.toLocaleString('de-DE')}</div>
-                    <div className="price-g">(Gramo a ${priceG})</div>
+                    <div className="price-g">Mejor precio garantizado</div>
                 </div>
             </div>
             <div className="container-buy">
