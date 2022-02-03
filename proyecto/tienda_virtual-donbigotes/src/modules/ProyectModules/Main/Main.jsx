@@ -14,8 +14,6 @@ function Main() {
                 <InfoLabel />
                 <BannerCarousell />
                 <BannerCards />
-                <MenuMascotas />
-                {/* <ContainerBanner TITLE={TITLE1} /> */}
                 <ContainerBanner TITLE={TITLE2} />
             </div>
         </main>

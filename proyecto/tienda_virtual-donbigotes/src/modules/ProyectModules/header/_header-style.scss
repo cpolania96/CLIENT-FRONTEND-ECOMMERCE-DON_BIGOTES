@@ -82,18 +82,22 @@ header {
                 .container-tools {
                     width: 20%;
                 }
-                .container-logo {
-                    position: relative;
-                    .logo {
-                        width: 6rem;
-                        height: 6rem;
-                        background-image: url(/src/assets/img/logo_corporativo.png);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 90px;
-                        position: absolute;
-                        left: 3rem;
-                        bottom: -28px;
+                a {
+                    width: 21%;
+                    .container-logo {
+                        position: relative;
+                        width: 21%;
+                        height: 50px;
+                        .logo {
+                            width: 20.2rem;
+                            height: 100%;
+                            background-image: url(/src/assets/img/logo_corporativo.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 190px;
+                            position: absolute;
+                            cursor: pointer;
+                        }
                     }
                 }
                 .container-search {

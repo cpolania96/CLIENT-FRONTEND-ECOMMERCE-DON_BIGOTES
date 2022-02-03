@@ -7,6 +7,7 @@ import Profile from "./profile";
 import Search from "./search";
 import Social from "./social";
 import Track from "./track";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header>
@@ -17,9 +18,11 @@ const Header = () => {
                         <Social />
                     </div>
                     <div className="container-second">
-                        <div className="container-logo">
-                            <div className="logo"></div>
-                        </div>
+                        <Link to="/">
+                            <div className="container-logo">
+                                <div className="logo"></div>
+                            </div>
+                        </Link>
                         <div className="container-search">
                             <Search />
                         </div>

@@ -82,18 +82,21 @@ header {
         header .container-principal .principal .container-second .container-logo,
         header .container-principal .principal .container-second .container-tools {
           width: 20%; }
-        header .container-principal .principal .container-second .container-logo {
-          position: relative; }
-          header .container-principal .principal .container-second .container-logo .logo {
-            width: 6rem;
-            height: 6rem;
-            background-image: url(/src/assets/img/logo_corporativo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 90px;
-            position: absolute;
-            left: 3rem;
-            bottom: -28px; }
+        header .container-principal .principal .container-second a {
+          width: 21%; }
+          header .container-principal .principal .container-second a .container-logo {
+            position: relative;
+            width: 21%;
+            height: 50px; }
+            header .container-principal .principal .container-second a .container-logo .logo {
+              width: 20.2rem;
+              height: 100%;
+              background-image: url(/src/assets/img/logo_corporativo.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 190px;
+              position: absolute;
+              cursor: pointer; }
         header .container-principal .principal .container-second .container-search {
           width: 52%;
           height: 80%;
