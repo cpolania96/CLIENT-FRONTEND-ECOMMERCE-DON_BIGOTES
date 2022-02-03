@@ -1,4 +1,4 @@
-import WhatsappIco from "../svg/icon-whatsapp"
+import WhatsappIco from "../../../assets/svg/icon-whatsapp"
 
 const BtnContact = () => {
     return (

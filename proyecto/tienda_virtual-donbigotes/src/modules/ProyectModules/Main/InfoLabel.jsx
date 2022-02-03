@@ -1,7 +1,7 @@
 import React from 'react'
-import IconDelivery from '../svg/IconDelivery'
-import IconSecure from '../svg/IconSecure'
-import IconWallet from '../svg/IconWallet'
+import IconDelivery from '../../../assets/svg/IconDelivery'
+import IconSecure from '../../../assets/svg/IconSecure'
+import IconWallet from '../../../assets/svg/IconWallet'
 
 function InfoLabel() {
     return (

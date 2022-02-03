@@ -1,5 +1,3 @@
-import OffertIco from "../svg/icon-offert";
-
 const BtnOfert = () => {
     return (
         <div className="items options">

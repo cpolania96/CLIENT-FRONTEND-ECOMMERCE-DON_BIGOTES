@@ -1,4 +1,4 @@
-import ArrowIco from "../svg/icon-arrow";
+import ArrowIco from "../../../assets/svg/icon-arrow";
 
 const BtnBlog = () => {
     return (

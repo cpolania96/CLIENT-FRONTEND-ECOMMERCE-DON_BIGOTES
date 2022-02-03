@@ -1,6 +1,3 @@
-import ArrowIco from "../svg/icon-arrow";
-import DogIco from "../svg/icon-dog";
-
 const BtnMasc = () => {
     return (
         <div className="items options">

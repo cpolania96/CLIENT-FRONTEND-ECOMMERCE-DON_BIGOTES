@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ArrowIco from "../ProyectModules/svg/icon-arrow";
-import CartIco from "../ProyectModules/svg/icon-cart";
+import ArrowIco from "../../assets/svg/icon-arrow";
+import CartIco from "../../assets/svg/icon-cart";
 import ContainerCart from "./ContainerCart";
 
 const Cart = () => {

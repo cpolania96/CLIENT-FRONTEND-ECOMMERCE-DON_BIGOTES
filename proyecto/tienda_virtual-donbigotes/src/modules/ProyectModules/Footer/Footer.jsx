@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ArrowIco from '../svg/icon-arrow'
-import IconHome from '../svg/IconHome'
+import ArrowIco from '../../../assets/svg/icon-arrow'
+import IconHome from '../../../assets/svg/IconHome'
 
 function footer() {
     const mensajeBanner = "Suscríbete a nuestro boletín y recibe un cupón del 20% de descuento"

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../../Context/cartContext'
-import IconInfo from '../../ProyectModules/svg/IconInfo'
-import IconStar from '../../ProyectModules/svg/IconStar'
+import IconInfo from '../../../assets/svg/IconInfo'
+import IconStar from '../../../assets/svg/IconStar'
 import ItemCount from '../../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 

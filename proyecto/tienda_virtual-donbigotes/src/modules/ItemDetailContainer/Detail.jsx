@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../../Context/cartContext'
 import ItemCount from '../ItemCount/ItemCount'
-import IconStar from '../ProyectModules/svg/IconStar'
+import IconStar from '../../assets/svg/IconStar'
 
 function Detail({ Pdetail }) {
     const prod = Pdetail

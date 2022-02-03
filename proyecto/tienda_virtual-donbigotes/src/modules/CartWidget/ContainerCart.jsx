@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import IconDelete from '../ProyectModules/svg/IconDelete'
+import IconDelete from '../../assets/svg/IconDelete'
 import ItemCart from './ItemCart'
 
 function ContainerCart() {

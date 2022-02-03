@@ -1,4 +1,4 @@
-import SearchIco from "../svg/icon-search";
+import SearchIco from "../../../assets/svg/icon-search";
 
 const Search = () => {
     return (

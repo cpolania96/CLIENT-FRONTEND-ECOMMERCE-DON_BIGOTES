@@ -1,6 +1,6 @@
-import YoutubeIco from "../svg/icon-youtube";
-import InstagramIco from "../svg/icon-instagram";
-import FacebookIco from "../svg/icon-facebook";
+import YoutubeIco from "../../../assets/svg/icon-youtube";
+import InstagramIco from "../../../assets/svg/icon-instagram";
+import FacebookIco from "../../../assets/svg/icon-facebook";
 
 const Social = () => {
     return (

@@ -1,5 +1,3 @@
-import SignalIco from "../svg/icon-signal";
-
 const BtnDogcast = () => {
     return (
         <div className="items options">
