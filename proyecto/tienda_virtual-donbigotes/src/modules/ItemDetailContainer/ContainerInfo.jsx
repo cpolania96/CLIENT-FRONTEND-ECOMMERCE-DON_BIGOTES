@@ -1,6 +1,6 @@
 import React from 'react'
-import IconInfo from '../svg/IconInfo'
-import IconMessages from '../svg/IconMessages'
+import IconInfo from '../ProyectModules/svg/IconInfo'
+import IconMessages from '../ProyectModules/svg/IconMessages'
 
 function ContainerInfo() {
     const titleInfo = "Información del producto"

@@ -3,8 +3,8 @@ import React from "react";
 
 const News = () => {
     return (
-        <div class="container-news">
-            <div class="news"></div>
+        <div className="container-news">
+            <div className="news"></div>
         </div>
     )
 }

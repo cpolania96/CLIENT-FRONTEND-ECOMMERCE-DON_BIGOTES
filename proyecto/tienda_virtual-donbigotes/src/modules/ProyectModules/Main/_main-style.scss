@@ -391,8 +391,9 @@ main {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                cursor: pointer;
-                                h6 {
+                                button {
+                                    border: none;
+                                    background-color: transparent;
                                     height: 100%;
                                     display: flex;
                                     align-items: center;
@@ -401,6 +402,7 @@ main {
                                     font-family: "Roboto", sans-serif;
                                     font-size: 1.1rem;
                                     color: #f8f8ff;
+                                    cursor: pointer;
                                 }
                             }
                         }

@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './modules/header/header';
-import Main from './modules/Main/Main';
-import Footer from './modules/Footer/Footer';
+import Header from './modules/ProyectModules/header/header';
+import Main from './modules/ProyectModules/Main/Main';
+import Footer from './modules/ProyectModules/Footer/Footer';
 import ItemDetailContainer from './modules/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider } from './Context/cartContext';
 

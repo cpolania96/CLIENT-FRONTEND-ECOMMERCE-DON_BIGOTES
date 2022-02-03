@@ -5,7 +5,7 @@ function At({ cards }) {
         cards.setAttribute()
     }
     return (
-        <button class="at">
+        <button className="at">
             <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path

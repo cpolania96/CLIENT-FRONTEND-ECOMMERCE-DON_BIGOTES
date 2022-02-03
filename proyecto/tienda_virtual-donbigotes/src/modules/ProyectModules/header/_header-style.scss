@@ -9,7 +9,7 @@ header {
         .news {
             height: 100%;
             width: 80%;
-            background-image: url(/src/img/banner-1025px@330x-100.jpg);
+            background-image: url(/src/assets/img/banner-1025px@330x-100.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position-y: -3px;
@@ -87,7 +87,7 @@ header {
                     .logo {
                         width: 6rem;
                         height: 6rem;
-                        background-image: url(/src/img/logo_corporativo.png);
+                        background-image: url(/src/assets/img/logo_corporativo.png);
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: 90px;
@@ -292,7 +292,7 @@ header {
                     display: flex;
                     cursor: pointer;
                     &:hover {
-                        .icon>svg {
+                        .icon > svg {
                             transform: rotate(180deg);
                             transition: 0.3s;
                         }
@@ -366,7 +366,7 @@ header {
             }
             .blog {
                 &:hover {
-                    span>svg {
+                    span > svg {
                         transform: rotate(180deg);
                         transition: 0.3s;
                     }

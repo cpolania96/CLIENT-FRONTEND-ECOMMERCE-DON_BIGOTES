@@ -1,7 +1,6 @@
 import React from "react";
-import CartWidget from "../CartWidget/CartWidget";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
-import Cart from "./cart";
+import CartWidget from "../../CartWidget/CartWidget";
+import Cart from "../../CartWidget/cart";
 import Menu from "./menu";
 import News from "./news";
 import Profile from "./profile";
@@ -12,36 +11,36 @@ const Header = () => {
     return (
         <header>
             <News />
-            <div class="container-principal">
-                <div class="principal">
-                    <div class="container-first">
+            <div className="container-principal">
+                <div className="principal">
+                    <div className="container-first">
                         <Social />
                     </div>
-                <div class="container-second">
-                    <div class="container-logo">
-                        <div class="logo"></div>
-                    </div>
-                    <div class="container-search">
-                        <Search />
-                    </div>
-                    <div class="container-tools">
-                        <Profile />
-                        <Track />
-                        <div class="container-cart">
-                           <Cart />
+                    <div className="container-second">
+                        <div className="container-logo">
+                            <div className="logo"></div>
+                        </div>
+                        <div className="container-search">
+                            <Search />
+                        </div>
+                        <div className="container-tools">
+                            <Profile />
+                            <Track />
+                            <div className="container-cart">
+                                <Cart />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container-third">
-                    <div></div>
+                    <div className="container-third">
+                        <div></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-menu">
-            <Menu />
-        </div>
-        <CartWidget />
-    </header>
+            <div className="container-menu">
+                <Menu />
+            </div>
+            <CartWidget />
+        </header>
     )
 }
 

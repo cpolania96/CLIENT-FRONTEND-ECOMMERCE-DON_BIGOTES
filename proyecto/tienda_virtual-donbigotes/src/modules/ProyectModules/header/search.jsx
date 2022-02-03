@@ -2,7 +2,7 @@ import SearchIco from "../svg/icon-search";
 
 const Search = () => {
     return (
-        <div class="search">
+        <div className="search">
             <input type="text" placeholder="Buscar" />
             <button>
                 <SearchIco />

@@ -1,9 +1,17 @@
 import React from 'react'
-import ItemCount from '../Main/ItemCount'
-import IconStar from '../svg/IconStar'
+import { useContext } from 'react'
+import { CartContext } from '../../Context/cartContext'
+import ItemCount from '../ItemCount/ItemCount'
+import IconStar from '../ProyectModules/svg/IconStar'
 
 function Detail({ Pdetail }) {
     const prod = Pdetail
+
+    const { agregarAlCarrito } = useContext(CartContext)
+
+    const onAdd = (cant) => {
+        agregarAlCarrito(prod, cant)
+    }
     return (
         <div className="detail">
             <div className='photo'></div>
@@ -47,10 +55,7 @@ function Detail({ Pdetail }) {
                     </button>
                 </div>
                 <div className="rows r7">
-                    <ItemCount />
-                    <div className='add-cart'>
-                        <button>Agregar al carrito</button>
-                    </div>
+                    <ItemCount stock={prod.stock} onAdd={onAdd} buttonLabel="Agregar al carrito" />
                 </div>
             </div>
         </div>

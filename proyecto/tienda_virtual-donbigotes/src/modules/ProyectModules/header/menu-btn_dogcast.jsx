@@ -2,7 +2,7 @@ import SignalIco from "../svg/icon-signal";
 
 const BtnDogcast = () => {
     return (
-        <div class="items options dogcast">
+        <div className="items options dogcast">
             <span>
                 <SignalIco />
             </span>

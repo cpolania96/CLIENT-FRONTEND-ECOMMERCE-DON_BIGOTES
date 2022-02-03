@@ -1,19 +1,19 @@
 import Ad from '../button/Ad'
 import At from '../button/At'
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import ItemListContainer from '../../ItemListContainer/ItemListContainer'
 
 function ContainerBanner({ TITLE }) {
     const ID = "cards"
     return (
-        <div class="banner">
-            <div class="title">
+        <div className="banner">
+            <div className="title">
                 <h6>{TITLE}</h6>
-                <div class="selector">
+                <div className="selector">
                     <At Id={ID} />
                     <Ad Id={ID} />
                 </div>
             </div>
-            <div class="container-cards">
+            <div className="container-cards">
                 <div className={ID}>
                     <ItemListContainer />
                 </div>

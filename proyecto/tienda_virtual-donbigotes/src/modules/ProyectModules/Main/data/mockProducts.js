@@ -17,7 +17,8 @@ const productos = [{
     price: new Intl.NumberFormat("de-DE").format(35000),
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 
 },
 {
@@ -31,7 +32,8 @@ const productos = [{
     price: new Intl.NumberFormat("de-DE").format(15000),
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 },
 {
     id: "3",
@@ -44,7 +46,8 @@ const productos = [{
     price: new Intl.NumberFormat("de-DE").format(18000),
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 },
 {
     id: "4",
@@ -57,7 +60,8 @@ const productos = [{
     price: new Intl.NumberFormat("de-DE").format(35000),
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 },
 {
     id: "5",
@@ -70,7 +74,8 @@ const productos = [{
     price: new Intl.NumberFormat("de-DE").format(35000),
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 },
 {
     id: "4",
@@ -83,7 +88,8 @@ const productos = [{
 
     priceG: (price, weight) => {
         return weight / price
-    }
+    },
+    stock: 1
 }
 ]
 

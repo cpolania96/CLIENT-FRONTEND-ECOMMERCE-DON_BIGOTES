@@ -5,20 +5,20 @@ import IconWallet from '../svg/IconWallet'
 
 function InfoLabel() {
     return (
-        <div class="info-label">
-            <div class="label l1">
+        <div className="info-label">
+            <div className="label l1">
                 <span>
                     <IconDelivery />
                 </span>
                 <h6>¡Envios gratis a Bogotá y Soacha!</h6>
             </div>
-            <div class="label l2">
+            <div className="label l2">
                 <span>
                     <IconSecure />
                 </span>
                 <h6>Compras seguras en línea</h6>
             </div>
-            <div class="label last">
+            <div className="label last">
                 <span>
                     <IconWallet />
                 </span>

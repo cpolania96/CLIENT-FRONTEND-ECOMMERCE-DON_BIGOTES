@@ -3,13 +3,13 @@ import DogIco from "../svg/icon-dog";
 
 const BtnMasc = () => {
     return (
-        <div class="items list-menu">
-            <div class="btn-menu">
-                <div class="img">
+        <div className="items list-menu">
+            <div className="btn-menu">
+                <div className="img">
                     {/* <DogIco /> */}
                 </div>
                 <h6 id="opcion1">Mascota</h6>
-                <span class="icon">
+                <span className="icon">
                     <ArrowIco />
                 </span>
             </div>

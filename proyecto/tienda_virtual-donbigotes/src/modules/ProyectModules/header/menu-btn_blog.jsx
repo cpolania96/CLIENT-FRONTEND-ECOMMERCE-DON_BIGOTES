@@ -2,12 +2,12 @@ import ArrowIco from "../svg/icon-arrow";
 
 const BtnBlog = () => {
     return (
-        <div class="items options blog">
+        <div className="items options blog">
             <h6 id="opcion3">Blog</h6>
             <span>
-               <ArrowIco />
+                <ArrowIco />
             </span>
         </div>
     )
-} 
+}
 export default BtnBlog;

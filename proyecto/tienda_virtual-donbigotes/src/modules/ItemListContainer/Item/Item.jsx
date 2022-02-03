@@ -1,20 +1,17 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../../Context/cartContext'
-import IconCart from '../../svg/IconCart'
-import IconInfo from '../../svg/IconInfo'
-import IconStar from '../../svg/IconStar'
-import ItemCount from '../../Main/ItemCount'
+import IconInfo from '../../ProyectModules/svg/IconInfo'
+import IconStar from '../../ProyectModules/svg/IconStar'
+import ItemCount from '../../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
 function Item({ item }) {
-    // Obtener contexto
-    const { cartList, agregarAlCarrito } = useContext(CartContext)
-    // Función para agregar productos al carrito
-    function onAdd(cant) {
-        agregarAlCarrito({ ...item, cantidad: cant })
+    const prod = item
+    const { agregarAlCarrito } = useContext(CartContext)
+
+    const onAdd = (cant) => {
+        agregarAlCarrito(prod, cant)
     }
-    console.log(cartList);
-    // Constructor de la tarjeta
     const id = item.id
     const name = item.name
     const photo = item.photo
@@ -22,20 +19,20 @@ function Item({ item }) {
     const price = item.price
     const priceG = item.priceG()
     return (
-        <div class="card">
-            <div class="body">
+        <div className="card">
+            <div className="body">
                 <Link to={`/detalle/${id}`}>
-                    <div class="info">
+                    <div className="info">
                         <IconInfo />
                     </div>
                 </Link>
-                <div class="img">
+                <div className="img">
                     <img src={photo} alt="" />
                 </div>
-                <div class="descript1">
-                    <div class="name">{name}</div>
-                    <div class="rating">
-                        <div class="star">
+                <div className="descript1">
+                    <div className="name">{name}</div>
+                    <div className="rating">
+                        <div className="star">
                             <IconStar width="13" />
                             <IconStar width="13" />
                             <IconStar width="13" />
@@ -43,23 +40,20 @@ function Item({ item }) {
                             <IconStar width="13" />
                         </div>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <h6>
                             {weight}g
                         </h6>
                     </div>
                 </div>
-                <div class="descript2">
-                    <div class="discount"></div>
-                    <div class="price">${price.toLocaleString('de-DE')}</div>
-                    <div class="price-g">(Gramo a ${priceG})</div>
+                <div className="descript2">
+                    <div className="discount"></div>
+                    <div className="price">${price.toLocaleString('de-DE')}</div>
+                    <div className="price-g">(Gramo a ${priceG})</div>
                 </div>
             </div>
-            <div class="container-buy">
-                <ItemCount />
-                <button class="buy" onClick={onAdd}>
-                    <h6>Comprar</h6>
-                </button>
+            <div className="container-buy">
+                <ItemCount buttonLabel="Comprar" onAdd={onAdd} />
             </div>
         </div>
     )

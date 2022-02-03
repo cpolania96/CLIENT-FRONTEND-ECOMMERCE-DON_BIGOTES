@@ -4,15 +4,15 @@ import FacebookIco from "../svg/icon-facebook";
 
 const Social = () => {
     return (
-        <div class="social">
-            <div class="label">Síguenos</div>
-            <a class="icon">
+        <div className="social">
+            <div className="label">Síguenos</div>
+            <a className="icon">
                 <YoutubeIco />
             </a>
-            <a class="icon">
+            <a className="icon">
                 <InstagramIco />
             </a>
-            <a class="icon">
+            <a className="icon">
                 <FacebookIco />
             </a>
         </div>

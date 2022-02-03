@@ -6,7 +6,7 @@ function Ad({ Id }) {
         ID.style.transform = "translate-x(-67%)"
     }
     return (
-        <button class="ad" onClick={AdBtn}>
+        <button className="ad" onClick={AdBtn}>
             <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path

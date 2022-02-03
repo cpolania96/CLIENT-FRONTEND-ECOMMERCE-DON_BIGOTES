@@ -10,7 +10,7 @@ function Main() {
     const TITLE2 = "Los más vendidos..."
     return (
         <main>
-            <div class="container-content">
+            <div className="container-content">
                 <InfoLabel />
                 <BannerCarousell />
                 <BannerCards />

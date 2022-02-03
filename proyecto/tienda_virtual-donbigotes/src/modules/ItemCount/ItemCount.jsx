@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function ItemCount() {
+function ItemCount({ onAdd, buttonLabel }) {
     const [count, setCount] = useState(1)
     const [disable, setDisable] = useState(false)
     const buttonDisable = (ID) => this.querySelector(ID).disable
@@ -20,11 +20,16 @@ function ItemCount() {
         buttonDisable("btnless")
     }
     return (
-        <div class="ItemCount">
-            <button class="btnless" onClick={lessCount}>-</button>
-            <h6>{count}</h6>
-            <button class="btnplus" onClick={handleCount}>+</button>
-        </div>
+        <>
+            <div className="ItemCount">
+                <button className="btnless" onClick={lessCount}>-</button>
+                <h6>{count}</h6>
+                <button className="btnplus" onClick={handleCount}>+</button>
+            </div>
+            <div className='buy add-cart' onClick={() => onAdd(count)}>
+                <button>{buttonLabel}</button>
+            </div>
+        </>
     )
 }
 

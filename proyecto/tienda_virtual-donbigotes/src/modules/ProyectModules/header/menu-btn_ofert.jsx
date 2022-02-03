@@ -2,7 +2,7 @@ import OffertIco from "../svg/icon-offert";
 
 const BtnOfert = () => {
     return (
-        <div class="items options offert">
+        <div className="items options offert">
             <span>
                 <OffertIco />
             </span>
