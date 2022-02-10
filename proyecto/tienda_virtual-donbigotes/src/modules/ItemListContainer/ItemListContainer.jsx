@@ -1,4 +1,4 @@
-import { getFetch } from '../ProyectModules/Main/data/mockProducts';
+import { getFetch } from '../data/mockProducts';
 import React, { useEffect, useState } from "react";
 import ItemList from './ItemList/ItemList';
 

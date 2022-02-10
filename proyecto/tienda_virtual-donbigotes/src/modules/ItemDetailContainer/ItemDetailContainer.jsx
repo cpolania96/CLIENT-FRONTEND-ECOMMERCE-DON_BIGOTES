@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getFetch } from '../ProyectModules/Main/data/mockProducts';
+import { getFetch } from '../data/mockProducts';
 import ContainerDetail from '../ItemDetailContainer/ContainerDetail';
 
 function ItemDetailContainer() {
