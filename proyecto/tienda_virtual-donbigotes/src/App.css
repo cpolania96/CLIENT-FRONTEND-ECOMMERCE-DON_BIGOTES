@@ -1247,3 +1247,116 @@ main .container-detail {
         border-radius: 4px;
         color: white;
         cursor: pointer; }
+
+#checkout h6 {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #1173a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 13px 0; }
+
+#checkout .checkout {
+  width: 90%;
+  height: 23rem;
+  margin: 0 auto;
+  display: flex;
+  position: relative; }
+  #checkout .checkout .form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f89922;
+    margin-right: 32px;
+    margin-top: 10px;
+    height: 72%; }
+    #checkout .checkout .form form {
+      width: 90%;
+      margin: 25px auto 0 auto;
+      font-family: 'Roboto', sans-serif;
+      color: #3f3844; }
+      #checkout .checkout .form form input {
+        height: 66%;
+        outline: none;
+        padding-left: 4px;
+        border-radius: 4px;
+        border: solid 1px #f89922; }
+      #checkout .checkout .form form .row {
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+      #checkout .checkout .form form .direccion input {
+        width: 82.6%;
+        justify-self: flex-end; }
+    #checkout .checkout .form button {
+      width: 90%;
+      height: 2rem;
+      background-color: #f89922;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      margin: 32px auto 0 auto;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 4px; }
+  #checkout .checkout .buttons {
+    width: 11rem;
+    height: 3rem;
+    position: absolute;
+    left: 24.3%;
+    bottom: 6%;
+    display: flex;
+    justify-content: space-around; }
+    #checkout .checkout .buttons button {
+      width: 51px;
+      height: 100%;
+      border: none;
+      border-radius: 7px;
+      background-color: #f89922;
+      cursor: pointer; }
+    #checkout .checkout .buttons .back svg {
+      width: 63%; }
+      #checkout .checkout .buttons .back svg .st0 {
+        fill: white; }
+    #checkout .checkout .buttons .home svg .st0 {
+      fill: white; }
+  #checkout .checkout .resumen {
+    width: 30%;
+    height: 17.8rem;
+    border: 1px solid #f89922; }
+    #checkout .checkout .resumen h6 {
+      width: 100%;
+      height: 17px; }
+    #checkout .checkout .resumen .resumen-content {
+      width: 100%;
+      height: 13rem; }
+      #checkout .checkout .resumen .resumen-content ul {
+        width: 93%;
+        height: 100%;
+        padding: 10px; }
+        #checkout .checkout .resumen .resumen-content ul li {
+          list-style: none;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          font-family: 'Roboto', sans-serif;
+          color: #3f3844; }
+          #checkout .checkout .resumen .resumen-content ul li span {
+            width: 65%; }
+          #checkout .checkout .resumen .resumen-content ul li .price {
+            width: 26%; }
+  #checkout .checkout .total {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #3f3844;
+    font-size: 1.1rem;
+    border-top: 1px solid #f89922; }

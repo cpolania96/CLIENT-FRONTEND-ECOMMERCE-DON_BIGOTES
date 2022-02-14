@@ -7,6 +7,7 @@ import Footer from './modules/ProyectModules/Footer/Footer';
 import ItemDetailContainer from './modules/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider } from './Context/cartContext';
 import Cart from './modules/CartWidget/Cart';
+import Checkout from './modules/CartWidget/Checkout';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route exact path='/detalle/:detalleId' element={<ItemDetailContainer />} />
                     <Route exact path='/' />
                     <Route exact path='/cart' element={<Cart />} />
+                    <Route exact path='/cart/checkout' element={<Checkout />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
