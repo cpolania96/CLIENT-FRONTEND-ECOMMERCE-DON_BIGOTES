@@ -3,11 +3,10 @@ import ContainerInfo from './ContainerInfo'
 import Detail from './Detail'
 
 function ContainerDetail({ prod }) {
-    const detail = prod
     return (
         <main>
             <div className="container-content container-detail">
-                <Detail Pdetail={detail} />
+                <Detail item={prod} />
                 <ContainerInfo />
             </div>
         </main>

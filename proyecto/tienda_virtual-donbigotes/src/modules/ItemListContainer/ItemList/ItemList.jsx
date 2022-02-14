@@ -4,7 +4,7 @@ import Item from '../Item/Item';
 
 function ItemList({ items }) {
     return (
-        items.map(prod => <Item item={prod} />)
+        items.map(items => <Item item={items} />)
     )
 }
 

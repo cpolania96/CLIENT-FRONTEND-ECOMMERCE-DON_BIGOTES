@@ -4,8 +4,7 @@ import { CartContext } from '../../Context/cartContext'
 import ItemCount from '../ItemCount/ItemCount'
 import IconStar from '../../assets/svg/IconStar'
 
-function Detail({ Pdetail }) {
-    const prod = Pdetail
+function Detail({ prod }) {
 
     const { agregarAlCarrito } = useContext(CartContext)
 
@@ -16,7 +15,7 @@ function Detail({ Pdetail }) {
         <div className="detail">
             <div className='photo'></div>
             <div className='info'>
-                <div className="rows r1">{prod.name}</div>
+                <div className="rows r1"></div>
                 <div className="rows r2">
                     <h6>Marca: Don Bigotes</h6>
                     <h6>Referencia: 258488247 </h6>
@@ -34,7 +33,7 @@ function Detail({ Pdetail }) {
                     </div>
                 </div>
                 <div className="rows r4">
-                    <h6 className='price'>${prod.price}</h6>
+                    <h6 className='price'>$</h6>
                     <h6 className='label'>IVA incluido*</h6>
                 </div>
                 <div className="rows r5">
@@ -55,7 +54,7 @@ function Detail({ Pdetail }) {
                     </button>
                 </div>
                 <div className="rows r7">
-                    <ItemCount stock={prod.stock} onAdd={onAdd} buttonLabel="Agregar al carrito" />
+                    <ItemCount stock="" onAdd={onAdd} buttonLabel="Agregar al carrito" />
                 </div>
             </div>
         </div>

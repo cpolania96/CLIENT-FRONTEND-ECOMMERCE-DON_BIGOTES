@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getFetch } from '../data/mockProducts';
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import ContainerDetail from '../ItemDetailContainer/ContainerDetail';
 
 function ItemDetailContainer() {
-    const [producto, setProducto] = useState({})
+    const [product, setProduct] = useState({})
     const { detalleId } = useParams()
     useEffect(() => {
-        getFetch
-            .then(resp => setProducto(resp.find(prod => prod.id === detalleId)))
+        const db = getFirestore()
+        const queryProd = doc(db, "items", detalleId)
+        console.log(queryProd);
+        getDoc(queryProd)
+            .then(res => { setProduct({ id: res.id, ...res.data() }) })
     }, [detalleId])
+    console.log(product);
     return (
-        <ContainerDetail prod={producto} />
+        <ContainerDetail prod={product} />
     )
 }
 

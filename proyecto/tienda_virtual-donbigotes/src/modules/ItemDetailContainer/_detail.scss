@@ -291,3 +291,11 @@ main {
         }
     }
 }
+#loading {
+    position: absolute;
+    left: 45%;
+    bottom: 50%;
+    font-size: 1.8rem;
+    @include roboto;
+    color: #f89922;
+}

@@ -1,19 +1,27 @@
-import { getFetch } from '../data/mockProducts';
 import React, { useEffect, useState } from "react";
 import ItemList from './ItemList/ItemList';
+import { collection, getFirestore, getDocs, query } from 'firebase/firestore'
 
 
 function ItemListContainer() {
-   const [productos, setProductos] = useState([])
+   const [products, setProducts] = useState([])
    const [loading, setLoading] = useState(true)
    useEffect(() => {
-      getFetch
-         .then(resp => setProductos(resp))
-         .catch(err => console.log(err))
+      const db = getFirestore()
+      const queryCollection = query(collection(db, 'items'))
+      getDocs(queryCollection)
+         .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
          .finally(() => setLoading(false))
    }, [])
+   console.log(products);
    return (
-      <ItemList items={productos} />
+      <>
+         {loading ?
+            <h3 id="loading"> Cargando </h3>
+            :
+            <ItemList items={products} />
+         }
+      </>
    )
 }
 

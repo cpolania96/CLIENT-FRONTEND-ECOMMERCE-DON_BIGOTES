@@ -6,22 +6,20 @@ import ItemCount from '../../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
 function Item({ item }) {
-    const prod = item
     const { agregarAlCarrito } = useContext(CartContext)
 
     const onAdd = (cant) => {
-        agregarAlCarrito(prod, cant)
+        agregarAlCarrito(item, cant)
     }
     const id = item.id
-    const name = item.name
-    const photo = item.photo
+    const name = item.title
+    const photo = item.imageURL
     const weight = item.weight
     const price = item.price
-    const priceG = item.priceG()
     return (
         <div className="card">
             <div className="body">
-                <Link to={`/detalle/${id}`}>
+                <Link to={`/detalle/ ${id}`}>
                     <div className="info">
                         <IconInfo />
                     </div>

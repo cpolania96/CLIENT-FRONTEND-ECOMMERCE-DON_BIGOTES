@@ -472,6 +472,7 @@ main {
         height: 91%;
         width: 59.9rem;
         display: flex;
+        position: relative;
         overflow-x: hidden;
         padding-left: 30px; }
         main .container-content .banner .container-cards .cards {
@@ -869,6 +870,14 @@ main .container-detail {
         font-family: 'Roboto', sans-serif;
         color: #3f3844;
         padding: 10px; }
+
+#loading {
+  position: absolute;
+  left: 45%;
+  bottom: 50%;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  color: #f89922; }
 
 .footer {
   width: 100%;
