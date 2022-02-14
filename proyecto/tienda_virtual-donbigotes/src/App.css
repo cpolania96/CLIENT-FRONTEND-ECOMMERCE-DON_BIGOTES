@@ -1110,3 +1110,140 @@ main .container-detail {
         width: 17px; }
         #cart-style .container-button .delete-all svg .st0 {
           fill: white; }
+
+#container-cart h6 {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  color: #1173a3;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  padding: 13px 0; }
+  #container-cart h6 span {
+    margin-right: 11px; }
+    #container-cart h6 span svg .st0 {
+      fill: #1173a3; }
+
+#container-cart .cart {
+  width: 94%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto; }
+  #container-cart .cart .cart-list {
+    width: 70%;
+    height: 20rem;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; }
+    #container-cart .cart .cart-list .cart-item {
+      width: 95%;
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      border-radius: 7px;
+      border: 1px solid #f89922;
+      position: relative;
+      background-color: white; }
+      #container-cart .cart .cart-list .cart-item .image,
+      #container-cart .cart .cart-list .cart-item .container-descript {
+        height: 100%; }
+      #container-cart .cart .cart-list .cart-item .image {
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #container-cart .cart .cart-list .cart-item .image img {
+          height: 95%; }
+      #container-cart .cart .cart-list .cart-item .container-descript {
+        width: 50%;
+        height: 80%; }
+        #container-cart .cart .cart-list .cart-item .container-descript .name,
+        #container-cart .cart .cart-list .cart-item .container-descript .descript {
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          color: #3f3844; }
+        #container-cart .cart .cart-list .cart-item .container-descript .name {
+          height: 25%;
+          font-weight: bold; }
+        #container-cart .cart .cart-list .cart-item .container-descript .descript {
+          height: 75%; }
+      #container-cart .cart .cart-list .cart-item .price {
+        width: 32%;
+        display: flex; }
+        #container-cart .cart .cart-list .cart-item .price .ItemCount {
+          width: 4.4rem;
+          display: flex;
+          margin-left: 13px;
+          background-color: #f89922;
+          border-radius: 7px;
+          border: 1px solid #f89922; }
+          #container-cart .cart .cart-list .cart-item .price .ItemCount button,
+          #container-cart .cart .cart-list .cart-item .price .ItemCount h6 {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          #container-cart .cart .cart-list .cart-item .price .ItemCount button {
+            width: 50%;
+            height: 100%;
+            border: none;
+            color: white;
+            background-color: transparent;
+            cursor: pointer; }
+          #container-cart .cart .cart-list .cart-item .price .ItemCount h6 {
+            width: 80%;
+            background-color: white; }
+        #container-cart .cart .cart-list .cart-item .price h6 {
+          width: 49%;
+          margin-left: 13px; }
+        #container-cart .cart .cart-list .cart-item .price .add-cart {
+          display: none; }
+      #container-cart .cart .cart-list .cart-item .close {
+        width: 17px;
+        height: 17px;
+        background-color: #f89922;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        font-size: 13px;
+        padding-left: 1px; }
+  #container-cart .cart .cart-checkout {
+    width: 30%;
+    margin-left: 12px; }
+    #container-cart .cart .cart-checkout h6 {
+      height: 17%;
+      font-size: 1.3rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #3f3844; }
+    #container-cart .cart .cart-checkout .options {
+      width: 100%;
+      height: 14rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #container-cart .cart .cart-checkout .options button {
+        height: 43px;
+        margin-top: 5px;
+        width: 95%;
+        border: none;
+        background-color: #f89922;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer; }

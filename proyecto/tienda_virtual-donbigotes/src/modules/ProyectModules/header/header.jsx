@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "../../CartWidget/CartWidget";
-import Cart from "../../CartWidget/cart";
+import CartContainer from "../../CartWidget/CartContainer";
 import Menu from "./menu";
 import News from "./news";
 import Profile from "../../../assets/svg/profile";
@@ -30,7 +30,7 @@ const Header = () => {
                             <Profile />
                             <Track />
                             <div className="container-cart">
-                                <Cart />
+                                <CartContainer />
                             </div>
                         </div>
                     </div>

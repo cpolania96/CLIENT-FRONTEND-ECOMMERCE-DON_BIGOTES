@@ -11,7 +11,6 @@ function Item({ item }) {
     const onAdd = (cant) => {
         agregarAlCarrito(item, cant)
     }
-    console.log(item);
     const id = item.id
     const name = item.title
     const photo = item.imageURL

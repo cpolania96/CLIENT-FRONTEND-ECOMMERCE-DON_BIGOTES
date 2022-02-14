@@ -9,7 +9,7 @@ function ItemDetailContainer() {
     console.log(detalleId);
     useEffect(() => {
         const db = getFirestore()
-        const queryProd = doc(db, "items", 'BAIVAfCaf1LN69TaseKa')
+        const queryProd = doc(db, "items", detalleId)
         getDoc(queryProd)
             .then(res => { setProduct({ id: res.id, ...res.data() }) })
     }, [detalleId])

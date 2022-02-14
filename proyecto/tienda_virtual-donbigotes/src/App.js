@@ -6,6 +6,7 @@ import Main from './modules/ProyectModules/Main/Main';
 import Footer from './modules/ProyectModules/Footer/Footer';
 import ItemDetailContainer from './modules/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider } from './Context/cartContext';
+import Cart from './modules/CartWidget/Cart';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Route exact path='/' element={<Main />} />
                     <Route exact path='/detalle/:detalleId' element={<ItemDetailContainer />} />
                     <Route exact path='/' />
+                    <Route exact path='/cart' element={<Cart />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
