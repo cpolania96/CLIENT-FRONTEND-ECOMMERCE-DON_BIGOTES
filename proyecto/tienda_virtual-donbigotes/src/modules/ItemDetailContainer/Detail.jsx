@@ -7,7 +7,7 @@ import IconStar from '../../assets/svg/IconStar'
 function Detail({ prod }) {
 
     const { agregarAlCarrito } = useContext(CartContext)
-
+    console.log(prod);
     const onAdd = (cant) => {
         agregarAlCarrito(prod, cant)
     }
