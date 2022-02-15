@@ -1,10 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 
 function Ad({ Id }) {
+    const [translateXder, settranslateXder] = useState()
     const ID = Id
     const AdBtn = (ID) => {
-        ID.style.transform = "translate-x(-67%)"
+        settranslateXder(ID.style.transform = "translate-x(-67%)")
     }
+    console.log(Id);
+
     return (
         <button className="ad" onClick={AdBtn}>
             <svg width="9" height="17" viewBox="0 0 9 17" fill="none"

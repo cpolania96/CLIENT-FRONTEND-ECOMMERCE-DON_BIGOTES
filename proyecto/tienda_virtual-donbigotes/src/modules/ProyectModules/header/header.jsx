@@ -1,5 +1,4 @@
 import React from "react";
-import CartWidget from "../../CartWidget/CartWidget";
 import CartContainer from "../../CartWidget/CartContainer";
 import Menu from "./menu";
 import News from "./news";
@@ -42,7 +41,6 @@ const Header = () => {
             <div className="container-menu">
                 <Menu />
             </div>
-            <CartWidget />
         </header>
     )
 }

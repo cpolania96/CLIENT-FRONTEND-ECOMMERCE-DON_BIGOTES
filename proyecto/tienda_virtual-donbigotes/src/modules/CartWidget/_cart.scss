@@ -9,10 +9,11 @@
     display: flex;
 }
 #cart-style {
-    width: 225px;
-    background-color: rgb(250, 250, 250);
+    width: 320px;
+    height: 13rem;
+    background-color: #f2f3f4;
     position: absolute;
-    transform: translate(-105px, 39px);
+    transform: translate(-201px, 39px);
     z-index: 1000;
     border-radius: 7px 0 7px 7px;
     display: flex;
@@ -20,26 +21,69 @@
     border: 1px solid #1173a3;
     cursor: default;
     .container-products {
-        max-height: 75%;
-        width: 100%;
+        height: 75%;
+        width: 96%;
         display: flex;
-        justify-content: center;
-        .item-cart {
-            width: 80%;
-            height: 64px;
-            background-color: blue;
-            margin-top: 5px;
-            width: 95%;
-            display: flex;
-            .image {
-                width: 28%;
-                height: 100%;
-                background-color: red;
-            }
-            .description {
-                height: 100%;
-                width: 72%;
-                background-color: yellow;
+        flex-direction: column;
+        margin: 0 auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: white;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #f89922;
+            border-radius: 2px;
+        }
+        .products {
+            width: 97%;
+            .item-cart {
+                width: 100%;
+                height: 98px;
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                border: 1px solid#f89922;
+                position: relative;
+                .description,
+                .close {
+                    @include roboto;
+                }
+                .image {
+                    width: 28%;
+                    height: 100%;
+                }
+                .description {
+                    height: 88%;
+                    width: 72%;
+                    color: #3f3844;
+                    div {
+                        height: 33%;
+                        padding-left: 8px;
+                    }
+                    .name {
+                        height: 41px;
+                        font-weight: bold;
+                    }
+                    .descript {
+                        height: 23px;
+                    }
+                }
+                .close {
+                    width: 17px;
+                    height: 17px;
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
+                    border-radius: 50%;
+                    background-color: #f89922;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                }
             }
         }
     }
