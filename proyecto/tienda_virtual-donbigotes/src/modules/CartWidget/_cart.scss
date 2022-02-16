@@ -13,7 +13,7 @@
     height: 13rem;
     background-color: #f2f3f4;
     position: absolute;
-    transform: translate(-201px, 39px);
+    transform: translate(-190px, 39px);
     z-index: 1000;
     border-radius: 7px 0 7px 7px;
     display: flex;
@@ -48,6 +48,7 @@
                 align-items: center;
                 border: 1px solid#f89922;
                 position: relative;
+                background-color: white;
                 .description,
                 .close {
                     @include roboto;
@@ -55,6 +56,12 @@
                 .image {
                     width: 28%;
                     height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                    }
                 }
                 .description {
                     height: 88%;
@@ -69,7 +76,11 @@
                         font-weight: bold;
                     }
                     .descript {
-                        height: 23px;
+                        height: 20px;
+                    }
+                    .price {
+                        font-weight: bold;
+                        font-size: 1.2rem;
                     }
                 }
                 .close {
@@ -83,6 +94,21 @@
                     border: none;
                     color: white;
                     cursor: pointer;
+                }
+                .item-count {
+                    position: absolute;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 0, 0, 0.685);
+                    top: 5px;
+                    left: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include roboto;
+                    color: white;
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -424,5 +450,19 @@
             font-size: 1.1rem;
             border-top: 1px solid #f89922;
         }
+    }
+}
+#empty-message {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+        @include roboto;
+        color: #3f3844;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
     }
 }

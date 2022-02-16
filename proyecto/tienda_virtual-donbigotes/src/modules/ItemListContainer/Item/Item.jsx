@@ -7,9 +7,8 @@ import { Link } from 'react-router-dom'
 
 function Item({ item }) {
     const { agregarAlCarrito } = useContext(CartContext)
-
     const onAdd = (cant) => {
-        agregarAlCarrito(item, cant)
+        agregarAlCarrito({ ...item, cantidad: cant })
     }
     const id = item.id
     const name = item.title

@@ -5,26 +5,40 @@ import { CartContext } from '../../Context/cartContext'
 
 function ContainerCart() {
     const cartIsVisible = useRef()
-    const { cartList, vaciarCarrito } = useContext(CartContext)
-    console.log(cartList);
-    return (
-        <div id="cart-style" ref={cartIsVisible}>
-            <div className="container-products">
+    const { cartList, vaciarCarrito, borrarItem } = useContext(CartContext)
+
+    function showCart() {
+        if (cartList.length === 0) {
+            return (
+                <div id="empty-message">
+                    <h6>Tu carrito está vacio <br /> ¡Llénalo!</h6>
+                </div>
+            )
+        } else {
+            return (
                 <div className="products">
                     {cartList.map(prod =>
                         <div className="item-cart">
                             <div className="image">
-                                <img src="" alt="" />
+                                <img src={prod.imageURL} alt="" />
                             </div>
                             <div className="description">
                                 <div className="name">{prod.title}</div>
-                                <div className="descript">Contenido: {prod.weight}g</div>
-                                <div className="price">${prod.price}</div>
+                                <div className="descript"> {prod.weight}g</div>
+                                <div className="price">${prod.price.toLocaleString('de-DE')}</div>
                             </div>
-                            <button className='close'>X</button>
+                            <button className='close' onClick={() => { borrarItem(prod.id) }}>X</button>
+                            <span className='item-count'>{prod.cantidad}</span>
                         </div>)}
                 </div>
+            )
+        }
+    }
 
+    return (
+        <div id="cart-style" ref={cartIsVisible}>
+            <div className="container-products">
+                {showCart()}
             </div>
             <div className="container-button">
                 <button>

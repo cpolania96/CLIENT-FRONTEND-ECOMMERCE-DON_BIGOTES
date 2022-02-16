@@ -13,7 +13,6 @@ function ItemListContainer() {
          .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
          .finally(() => setLoading(false))
    }, [])
-   console.log(products);
    return (
       <>
          {loading ?

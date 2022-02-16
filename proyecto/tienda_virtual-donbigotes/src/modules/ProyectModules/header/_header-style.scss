@@ -183,7 +183,7 @@ header {
                         }
                     }
                     .container-cart {
-                        width: 60%;
+                        width: 66%;
                         display: flex;
                         justify-content: center;
                         .cart {
@@ -241,13 +241,13 @@ header {
                                     align-items: center;
                                     @include roboto;
                                     color: $color-blanco;
-                                    font-size: 0.8rem;
+                                    font-size: 0.7rem;
                                 }
                             }
                             h6 {
                                 @include roboto;
                                 color: $color-blanco;
-                                font-size: 1rem;
+                                font-size: 0.9rem;
                                 margin-right: 3px;
                                 width: 56%;
                             }
