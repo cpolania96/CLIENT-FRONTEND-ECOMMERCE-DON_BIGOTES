@@ -8,6 +8,7 @@ import ItemDetailContainer from './modules/ItemDetailContainer/ItemDetailContain
 import { CartContextProvider } from './Context/cartContext';
 import Cart from './modules/CartWidget/Cart';
 import Checkout from './modules/CartWidget/Checkout';
+import ContainerCategory from './modules/Category/ContainerCategory';
 
 const App = () => {
     return (
@@ -17,7 +18,7 @@ const App = () => {
                 <Routes >
                     <Route exact path='/' element={<Main />} />
                     <Route exact path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-                    <Route exact path='/' />
+                    <Route exact path='/categoria/:categoryId' element={<ContainerCategory />} />
                     <Route exact path='/cart' element={<Cart />} />
                     <Route exact path='/cart/checkout' element={<Checkout />} />
                 </Routes>

@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Item({ item }) {
     const { agregarAlCarrito } = useContext(CartContext)
+
     const onAdd = (cant) => {
         agregarAlCarrito({ ...item, cantidad: cant })
     }
@@ -16,7 +17,7 @@ function Item({ item }) {
     const weight = item.weight
     const price = item.price
     return (
-        <div className="card">
+        <div className="card" id='card'>
             <div className="body">
                 <Link to={`/detalle/ ${id}`}>
                     <div className="info">

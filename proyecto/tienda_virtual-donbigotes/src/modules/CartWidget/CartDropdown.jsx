@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import IconDelete from '../../assets/svg/IconDelete'
 import { useContext } from 'react'
 import { CartContext } from '../../Context/cartContext'
+import { Link } from 'react-router-dom'
 
 function ContainerCart() {
     const cartIsVisible = useRef()
@@ -27,7 +28,7 @@ function ContainerCart() {
                                 <div className="descript"> {prod.weight}g</div>
                                 <div className="price">${prod.price.toLocaleString('de-DE')}</div>
                             </div>
-                            <button className='close' onClick={() => { borrarItem(prod.id) }}>X</button>
+                            <button className='close' onClick={() => borrarItem(prod.id)}>X</button>
                             <span className='item-count'>{prod.cantidad}</span>
                         </div>)}
                 </div>
@@ -41,9 +42,11 @@ function ContainerCart() {
                 {showCart()}
             </div>
             <div className="container-button">
-                <button>
-                    Finalizar Compra
-                </button>
+                <Link to="/cart">
+                    <button>
+                        Finalizar Compra
+                    </button>
+                </Link>
                 <button className='delete-all' onClick={vaciarCarrito}>
                     <IconDelete />
                 </button>

@@ -7,7 +7,6 @@ import ContainerCart from "./CartDropdown";
 const CartContainer = () => {
     const [cartVisible, setCartVisible] = useState(false)
     const { getTotal, getTotalItems } = useContext(CartContext)
-    const [globoVisible, setGloboVisible] = useState(false)
 
     const globoIsVisible = () => {
         const globoStyle = "translate(10, -3)"
@@ -31,8 +30,8 @@ const CartContainer = () => {
                 <div className="icon-2">
                     <ArrowIco />
                 </div>
-                {/* {cartVisible && <ContainerCart />} */}
-                <ContainerCart />
+                {cartVisible && <ContainerCart />}
+                {/* <ContainerCart /> */}
             </div>
 
         </>
