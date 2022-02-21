@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
-import ContainerDetail from '../ItemDetailContainer/ContainerDetail';
+import ContainerDetail from '../ItemListContainer/ContainerCategory.jsx';
 
 function ItemDetailContainer() {
     const [product, setProduct] = useState({})

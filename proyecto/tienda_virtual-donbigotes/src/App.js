@@ -6,9 +6,9 @@ import Main from './modules/ProyectModules/Main/Main';
 import Footer from './modules/ProyectModules/Footer/Footer';
 import ItemDetailContainer from './modules/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider } from './Context/cartContext';
-import Cart from './modules/CartWidget/Cart';
-import Checkout from './modules/CartWidget/Checkout';
-import ContainerCategory from './modules/Category/ContainerCategory';
+import ContainerCategory from './modules/ItemListContainer/ContainerCategory';
+import Checkout from './modules/CartWidget/Checkout'
+import Cart from './modules/CartWidget/cart';
 
 const App = () => {
     return (

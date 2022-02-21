@@ -294,8 +294,31 @@ main {
 #loading {
     position: absolute;
     left: 45%;
-    bottom: 50%;
+    bottom: 42%;
     font-size: 1.8rem;
     @include roboto;
     color: #f89922;
+}
+#container-category {
+    width: 90%;
+    min-height: 21rem;
+    display: flex;
+    flex-direction: column;
+    .title {
+        width: 60%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include roboto;
+        font-size: 1.4rem;
+        color: #3f3844;
+    }
+    .container-items {
+        width: 80%;
+        margin: 10px auto 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
