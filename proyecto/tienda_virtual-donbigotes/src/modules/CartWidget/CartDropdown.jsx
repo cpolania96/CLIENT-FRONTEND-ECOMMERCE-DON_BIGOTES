@@ -11,7 +11,7 @@ function ContainerCart() {
     function showCart() {
         if (cartList.length === 0) {
             return (
-                <div id="empty-message">
+                <div id="empty-message-dropdown">
                     <h6>Tu carrito está vacio <br /> ¡Llénalo!</h6>
                 </div>
             )

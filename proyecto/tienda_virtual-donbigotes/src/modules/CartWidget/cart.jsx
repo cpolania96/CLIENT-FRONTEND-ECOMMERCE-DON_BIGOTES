@@ -12,7 +12,7 @@ function Cart() {
         if (cartList.length === 0) {
             return (
                 <div id="empty-message">
-                    <h6>Tu carrito esta vacío<br /> ¡Esperamos lo llenes pronto!</h6>
+                    <h6 id='empty-label'>Tu carrito esta vacío<br /> ¡Esperamos lo llenes pronto!</h6>
                 </div>
             )
         } else {

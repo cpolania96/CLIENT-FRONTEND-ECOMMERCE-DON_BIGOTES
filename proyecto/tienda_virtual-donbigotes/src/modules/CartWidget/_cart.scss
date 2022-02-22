@@ -160,6 +160,7 @@
         display: flex;
         justify-content: center;
         padding: 13px 0;
+        text-align: center;
         span {
             margin-right: 11px;
             svg {
@@ -180,11 +181,6 @@
             padding: 15px 0;
             display: flex;
             justify-content: center;
-            #empty-message {
-                h6 {
-                    font-size: 1.6rem;
-                }
-            }
             .list {
                 width: 100%;
                 height: 100%;
@@ -343,15 +339,17 @@
     }
 }
 #checkout {
-    height: 25rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     #empty-message {
-        height: 56%;
+        height: 23rem;
+        width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         .buttons {
             width: 12rem;
             height: 3rem;
@@ -371,6 +369,13 @@
                 }
             }
         }
+        h6 {
+            @include roboto;
+            color: #3f3844;
+            width: 100%;
+            text-align: center;
+            font-size: 1.6rem;
+        }
     }
     h6 {
         width: 100%;
@@ -384,7 +389,7 @@
     }
     span {
         display: flex;
-        justify-content: center;
+        height: 100%;
         svg {
             width: 4rem;
             .cls-1 {
@@ -424,7 +429,7 @@
     }
     .checkout {
         width: 90%;
-        height: 23rem;
+        height: 83%;
         margin: 0 auto;
         display: flex;
         position: relative;
@@ -436,14 +441,19 @@
             border: 1px solid #f89922;
             margin-right: 32px;
             margin-top: 10px;
-            height: 72%;
+            height: 27rem;
+            margin-bottom: 7rem;
             form {
                 width: 90%;
                 margin: 25px auto 0 auto;
                 @include roboto;
                 color: #3f3844;
+                label {
+                    width: 25%;
+                }
                 input {
                     height: 66%;
+                    width: 75%;
                     outline: none;
                     padding-left: 4px;
                     border-radius: 4px;
@@ -452,25 +462,21 @@
                 }
                 .row {
                     width: 100%;
+                    margin-bottom: 13px;
                     height: 2rem;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
-                }
-                .direccion {
-                    input {
-                        width: 82.6%;
-                        justify-self: flex-end;
-                    }
+                    position: relative;
                 }
                 input[type="submit"] {
                     width: 100%;
-                    height: 2rem;
+                    height: 44px;
                     background-color: #f89922;
                     border: none;
                     @include roboto;
                     color: white;
-                    margin: 32px auto 0 auto;
+                    margin: 16px auto 0 auto;
                     font-size: 1.2rem;
                     cursor: pointer;
                     border-radius: 4px;
@@ -537,6 +543,7 @@
                         }
                         span {
                             width: 56%;
+                            padding-bottom: 6px;
                         }
                         .price {
                             width: 26%;
@@ -557,20 +564,6 @@
             border-top: 1px solid #f89922;
             font-weight: bold;
         }
-    }
-}
-#empty-message {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h6 {
-        @include roboto;
-        color: #3f3844;
-        font-size: 1.2rem;
-        width: 100%;
-        text-align: center;
     }
 }
 
@@ -607,4 +600,12 @@
             border-radius: 0 6px 6px 0;
         }
     }
+}
+
+#error-label {
+    position: absolute;
+    bottom: -12px;
+    left: 18px;
+    font-size: 0.7rem;
+    color: red;
 }

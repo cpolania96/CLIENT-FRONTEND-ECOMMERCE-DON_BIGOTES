@@ -822,6 +822,29 @@ main {
   #content #loading {
     bottom: 29%; }
 
+#order-ok {
+  width: 45%;
+  height: 17rem;
+  margin: 4rem auto; }
+  #order-ok span {
+    display: flex;
+    justify-content: center;
+    margin: 0; }
+
+#empty-message-dropdown {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  #empty-message-dropdown h6 {
+    color: #3f3844;
+    font-size: 1.3rem;
+    width: 80%; }
+
+#empty-label {
+  padding-top: 36% !important;
+  height: 18%; }
+
 main .container-detail {
   width: 76%;
   height: 34rem;
@@ -1064,16 +1087,29 @@ main .container-detail {
         color: #3f3844;
         padding: 10px; }
 
-#loading {
+#loading,
+#loading-check {
   position: absolute;
-  left: 45.8%;
+  left: 0;
   bottom: 42%;
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
   color: #f89922; }
 
+#loading {
+  left: 45.8%; }
+
+#loading-check {
+  width: 100%;
+  height: 24rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 #container-category {
-  width: 90%;
+  width: 76%;
+  height: 100%;
   min-height: 21rem;
   display: flex;
   flex-direction: column; }
@@ -1394,7 +1430,8 @@ main .container-detail {
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
-  padding: 13px 0; }
+  padding: 13px 0;
+  text-align: center; }
   #container-cart h6 span {
     margin-right: 11px; }
     #container-cart h6 span svg .st0 {
@@ -1411,8 +1448,6 @@ main .container-detail {
     padding: 15px 0;
     display: flex;
     justify-content: center; }
-    #container-cart .cart .cart-list #empty-message h6 {
-      font-size: 1.6rem; }
     #container-cart .cart .cart-list .list {
       width: 100%;
       height: 100%;
@@ -1543,15 +1578,17 @@ main .container-detail {
         margin-top: 0; }
 
 #checkout {
-  height: 25rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-start; }
   #checkout #empty-message {
-    height: 56%;
+    height: 23rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     #checkout #empty-message .buttons {
       width: 12rem;
       height: 3rem; }
@@ -1568,6 +1605,12 @@ main .container-detail {
           border-radius: 7px;
           font-size: 1.1rem;
           cursor: pointer; }
+    #checkout #empty-message h6 {
+      font-family: 'Roboto', sans-serif;
+      color: #3f3844;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6rem; }
   #checkout h6 {
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -1579,7 +1622,7 @@ main .container-detail {
     padding: 13px 0; }
   #checkout span {
     display: flex;
-    justify-content: center; }
+    height: 100%; }
     #checkout span svg {
       width: 4rem; }
       #checkout span svg .cls-1 {
@@ -1610,7 +1653,7 @@ main .container-detail {
           fill: white; }
   #checkout .checkout {
     width: 90%;
-    height: 23rem;
+    height: 83%;
     margin: 0 auto;
     display: flex;
     position: relative; }
@@ -1622,14 +1665,18 @@ main .container-detail {
       border: 1px solid #f89922;
       margin-right: 32px;
       margin-top: 10px;
-      height: 72%; }
+      height: 27rem;
+      margin-bottom: 7rem; }
       #checkout .checkout .form form {
         width: 90%;
         margin: 25px auto 0 auto;
         font-family: 'Roboto', sans-serif;
         color: #3f3844; }
+        #checkout .checkout .form form label {
+          width: 25%; }
         #checkout .checkout .form form input {
           height: 66%;
+          width: 75%;
           outline: none;
           padding-left: 4px;
           border-radius: 4px;
@@ -1637,21 +1684,20 @@ main .container-detail {
           margin: 0; }
         #checkout .checkout .form form .row {
           width: 100%;
+          margin-bottom: 13px;
           height: 2rem;
           display: flex;
           justify-content: space-around;
-          align-items: center; }
-        #checkout .checkout .form form .direccion input {
-          width: 82.6%;
-          justify-self: flex-end; }
+          align-items: center;
+          position: relative; }
         #checkout .checkout .form form input[type="submit"] {
           width: 100%;
-          height: 2rem;
+          height: 44px;
           background-color: #f89922;
           border: none;
           font-family: 'Roboto', sans-serif;
           color: white;
-          margin: 32px auto 0 auto;
+          margin: 16px auto 0 auto;
           font-size: 1.2rem;
           cursor: pointer;
           border-radius: 4px; }
@@ -1701,7 +1747,8 @@ main .container-detail {
               width: 3%;
               font-weight: bold; }
             #checkout .checkout .resumen .resumen-content ul li span {
-              width: 56%; }
+              width: 56%;
+              padding-bottom: 6px; }
             #checkout .checkout .resumen .resumen-content ul li .price {
               width: 26%; }
     #checkout .checkout .total {
@@ -1715,19 +1762,6 @@ main .container-detail {
       font-size: 1.1rem;
       border-top: 1px solid #f89922;
       font-weight: bold; }
-
-#empty-message {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  #empty-message h6 {
-    font-family: 'Roboto', sans-serif;
-    color: #3f3844;
-    font-size: 1.2rem;
-    width: 100%;
-    text-align: center; }
 
 #itemcount {
   width: 57px;
@@ -1757,3 +1791,10 @@ main .container-detail {
       border-right: 1px solid white; }
     #itemcount .ItemCount .btnplus {
       border-radius: 0 6px 6px 0; }
+
+#error-label {
+  position: absolute;
+  bottom: -12px;
+  left: 18px;
+  font-size: 0.7rem;
+  color: red; }

@@ -626,3 +626,28 @@ main {
         bottom: 29%;
     }
 }
+#order-ok {
+    width: 45%;
+    height: 17rem;
+    margin: 4rem auto;
+    span {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+#empty-message-dropdown {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    h6 {
+        color: #3f3844;
+        font-size: 1.3rem;
+        width: 80%;
+    }
+}
+#empty-label {
+    padding-top: 36% !important;
+    height: 18%;
+}
