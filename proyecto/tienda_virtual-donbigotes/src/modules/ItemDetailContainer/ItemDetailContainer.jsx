@@ -1,21 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
-import ContainerDetail from '../ItemListContainer/ContainerCategory.jsx';
+import Detail from './Detail.jsx';
 
 function ItemDetailContainer() {
-    const [product, setProduct] = useState({})
-    const { detalleId } = useParams()
-    console.log(detalleId);
+    const [detail, setDetail] = useState({})
+    const { detailId } = useParams()
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
         const db = getFirestore()
-        const queryProd = doc(db, "items", detalleId)
+        const queryProd = doc(db, 'items', detailId)
         getDoc(queryProd)
-            .then(res => { setProduct({ id: res.id, ...res.data() }) })
-    }, [detalleId])
-    console.log(product);
+            .then(res => setDetail({ id: res.id, ...res.data() }))
+            .finally(() => setTimeout(() => setLoading(false)), 3000)
+        console.log(queryProd);
+    }, [])
+
     return (
-        <ContainerDetail prod={product} />
+        <main>
+            <div className="container-detail">
+                {loading ?
+                    <h3 id="loading"> Cargando </h3>
+                    :
+                    <Detail prod={detail} />
+                }
+            </div>
+        </main>
     )
 }
 

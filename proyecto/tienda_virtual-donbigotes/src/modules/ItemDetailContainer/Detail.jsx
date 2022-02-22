@@ -5,20 +5,22 @@ import ItemCount from '../ItemCount/ItemCount'
 import IconStar from '../../assets/svg/IconStar'
 
 function Detail({ prod }) {
-
     const { agregarAlCarrito } = useContext(CartContext)
-    console.log(prod);
+
     const onAdd = (cant) => {
-        agregarAlCarrito(prod, cant)
+        agregarAlCarrito({ ...prod, cantidad: cant })
     }
+
     return (
         <div className="detail">
-            <div className='photo'></div>
+            <div className='photo'>
+                <img src={prod.imageURL} alt="" />
+            </div>
             <div className='info'>
-                <div className="rows r1"></div>
+                <div className="rows r1">{prod.title}</div>
                 <div className="rows r2">
                     <h6>Marca: Don Bigotes</h6>
-                    <h6>Referencia: 258488247 </h6>
+                    <h6>Referencia: {prod.id}</h6>
                 </div>
                 <div className="rows r3">
                     <div className='container-star'>
@@ -33,7 +35,7 @@ function Detail({ prod }) {
                     </div>
                 </div>
                 <div className="rows r4">
-                    <h6 className='price'>$</h6>
+                    <h6 className='price'>${prod.price.toLocaleString('de-DE')}</h6>
                     <h6 className='label'>IVA incluido*</h6>
                 </div>
                 <div className="rows r5">
@@ -54,7 +56,7 @@ function Detail({ prod }) {
                     </button>
                 </div>
                 <div className="rows r7">
-                    <ItemCount stock="" onAdd={onAdd} buttonLabel="Agregar al carrito" />
+                    <ItemCount onAdd={onAdd} buttonLabel="Agregar al carrito" />
                 </div>
             </div>
         </div>

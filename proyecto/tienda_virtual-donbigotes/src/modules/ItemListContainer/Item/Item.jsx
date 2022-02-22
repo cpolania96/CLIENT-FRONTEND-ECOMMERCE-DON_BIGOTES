@@ -11,24 +11,19 @@ function Item({ item }) {
     const onAdd = (cant) => {
         agregarAlCarrito({ ...item, cantidad: cant })
     }
-    const id = item.id
-    const name = item.title
-    const photo = item.imageURL
-    const weight = item.weight
-    const price = item.price
     return (
         <div className="card" id='card'>
             <div className="body">
-                <Link to={`/detalle/ ${id}`}>
+                <Link to={`/detalle/${item.id}`}>
                     <div className="info">
                         <IconInfo />
                     </div>
                 </Link>
                 <div className="img">
-                    <img src={photo} alt="" />
+                    <img src={item.imageURL} alt="" />
                 </div>
                 <div className="descript1">
-                    <div className="name">{name}</div>
+                    <div className="name">{item.title}</div>
                     <div className="rating">
                         <div className="star">
                             <IconStar width="13" />
@@ -40,13 +35,13 @@ function Item({ item }) {
                     </div>
                     <div className="content">
                         <h6>
-                            {weight}g
+                            {item.weight}g
                         </h6>
                     </div>
                 </div>
                 <div className="descript2">
                     <div className="discount"></div>
-                    <div className="price">${price.toLocaleString('de-DE')}</div>
+                    <div className="price">${item.price.toLocaleString('de-DE')}</div>
                     <div className="price-g">Mejor precio garantizado</div>
                 </div>
             </div>
