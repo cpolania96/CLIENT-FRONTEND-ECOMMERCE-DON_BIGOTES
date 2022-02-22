@@ -9,8 +9,6 @@ function ContainerBanner({ TITLE }) {
             <div className="title">
                 <h6>{TITLE}</h6>
                 <div className="selector">
-                    <At Id={ID} />
-                    <Ad Id={ID} />
                 </div>
             </div>
             <div className="container-cards">

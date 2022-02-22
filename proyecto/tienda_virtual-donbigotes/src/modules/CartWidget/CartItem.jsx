@@ -10,10 +10,10 @@ function CartItem({ item, borrarItem }) {
             </div>
             <div className="container-descript">
                 <div className="name">{item.title}</div>
-                <div className="descript">Crema humectante para perros y gatos, con extractos naturales y aroma a romero. Presentación de 40 gramos</div>
+                <div className="descript">Descripción</div>
             </div>
             <div className="price">
-                <ItemCount />
+                {/* <ItemCount /> */}
                 <h6>${item.price.toLocaleString('de-DE')}</h6>
             </div>
             <button className='close' onClick={() => borrarItem(item.id)} > X </button>
