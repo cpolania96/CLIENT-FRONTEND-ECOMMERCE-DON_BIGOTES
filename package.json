@@ -47,7 +47,9 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "homepage": "https://cpolania96.github.io/reactjs-tienda "
   }
 }
