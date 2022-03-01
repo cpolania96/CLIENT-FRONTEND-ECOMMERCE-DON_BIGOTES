@@ -17,10 +17,10 @@ const App = () => {
                 <Header />
                 <Routes >
                     <Route exact path='donbigotes/' element={<Main />} />
-                    <Route exact path='donbigotes/detalle/:detailId' element={<ItemDetailContainer />} />
-                    <Route exact path='donbigotes/categoria/:categoryId' element={<ContainerCategory />} />
-                    <Route exact path='donbigotes/cart' element={<Cart />} />
-                    <Route exact path='donbigotes/cart/checkout' element={<Checkout />} />
+                    <Route exact path='/detalle/:detailId' element={<ItemDetailContainer />} />
+                    <Route exact path='/categoria/:categoryId' element={<ContainerCategory />} />
+                    <Route exact path='/cart' element={<Cart />} />
+                    <Route exact path='/cart/checkout' element={<Checkout />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
