@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/reactjs-tienda/static/css/main.13e9ce8a.css",
-    "main.js": "/reactjs-tienda/static/js/main.5217c8ef.js",
-    "static/media/bannerlogo.png": "/reactjs-tienda/static/media/bannerlogo.15e5afac916f7fd10652.png",
-    "static/media/banner-1025px@330x-100.jpg": "/reactjs-tienda/static/media/banner-1025px@330x-100.a56260f99c0293b92d55.jpg",
-    "static/media/bannerpayment.png": "/reactjs-tienda/static/media/bannerpayment.b5173bf316ccf69a27c1.png",
-    "static/media/logo_corporativo.png": "/reactjs-tienda/static/media/logo_corporativo.9307f87e4c017fcd9110.png",
-    "index.html": "/reactjs-tienda/index.html",
-    "main.13e9ce8a.css.map": "/reactjs-tienda/static/css/main.13e9ce8a.css.map",
-    "main.5217c8ef.js.map": "/reactjs-tienda/static/js/main.5217c8ef.js.map"
+    "main.css": "/donbigotes/static/css/main.9965ca67.css",
+    "main.js": "/donbigotes/static/js/main.b0d877e1.js",
+    "static/media/bannerlogo.png": "/donbigotes/static/media/bannerlogo.15e5afac916f7fd10652.png",
+    "static/media/banner-1025px@330x-100.jpg": "/donbigotes/static/media/banner-1025px@330x-100.a56260f99c0293b92d55.jpg",
+    "static/media/bannerpayment.png": "/donbigotes/static/media/bannerpayment.b5173bf316ccf69a27c1.png",
+    "static/media/logo_corporativo.png": "/donbigotes/static/media/logo_corporativo.9307f87e4c017fcd9110.png",
+    "index.html": "/donbigotes/index.html",
+    "main.9965ca67.css.map": "/donbigotes/static/css/main.9965ca67.css.map",
+    "main.b0d877e1.js.map": "/donbigotes/static/js/main.b0d877e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.13e9ce8a.css",
-    "static/js/main.5217c8ef.js"
+    "static/css/main.9965ca67.css",
+    "static/js/main.b0d877e1.js"
   ]
 }
