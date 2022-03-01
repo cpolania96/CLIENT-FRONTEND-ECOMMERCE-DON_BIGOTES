@@ -14,7 +14,7 @@ function Item({ item }) {
     return (
         <div className="card" id='card'>
             <div className="body">
-                <Link to={`donbigotes/detalle/${item.id}`}>
+                <Link to={`/detalle/${item.id}`}>
                     <div className="info">
                         <IconInfo />
                     </div>
