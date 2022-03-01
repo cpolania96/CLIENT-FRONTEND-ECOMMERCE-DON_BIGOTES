@@ -36,7 +36,7 @@ function Cart() {
                         <h6>El valor total de tu compra es: <br />${getTotal().toLocaleString('de-DE')}</h6>
                         <div className='options'>
                             <button onClick={vaciarCarrito}>Vaciar Carrito</button>
-                            <Link to="/"><button>Seguir Comprando</button></Link>
+                            <Link to="donbigotes/"><button>Seguir Comprando</button></Link>
                             <Link to="/cart/checkout"><button>Finalizar compra</button></Link>
                         </div>
                     </div>
