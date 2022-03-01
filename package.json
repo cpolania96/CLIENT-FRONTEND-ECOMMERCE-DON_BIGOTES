@@ -1,4 +1,5 @@
 {
+  "homepage": "https://cpolania96.github.io/reactjs-tienda",
   "name": "tienda_virtual-donbigotes",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-css": "node-sass --include-path scss src/scss/app.scss src/App.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,6 +37,7 @@
       "react-app/jest"
     ]
   },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,7 +53,6 @@
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15",
-    "homepage": "https://cpolania96.github.io/reactjs-tienda "
+    "nodemon": "^2.0.15"
   }
 }
