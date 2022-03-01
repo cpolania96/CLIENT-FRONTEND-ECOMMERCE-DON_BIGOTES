@@ -9,7 +9,7 @@ function MessageCheck({ id }) {
             <span><IconCheck /></span>
             <h6>¡Tu compra ha sido exitosa!</h6>
             <h6 id="title-check">Tu numero de pedido es: <br />{id}</h6>
-            <span><Link to="donbigotes/"><IconHome /></Link></span>
+            <span><Link to="/donbigotes/"><IconHome /></Link></span>
         </div>
     )
 }
