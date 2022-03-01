@@ -106,7 +106,7 @@ function Checkout() {
                     <div id="empty-message">
                         <h6>Tu carrito esta vacío<br /> ¡Esperamos lo llenes pronto!</h6>
                         <div className="buttons">
-                            <Link to="/" ><button>Elige productos</button></Link>
+                            <Link to="donbigotes/" ><button>Elige productos</button></Link>
                         </div>
                     </div>
                 </>
