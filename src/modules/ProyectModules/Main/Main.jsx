@@ -1,6 +1,4 @@
 import React from 'react'
-// import BannerCards from './BannerCards'
-// import BannerCarousell from './BannerCarousell'
 import ContainerBanner from './ContainerBanner'
 import InfoLabel from './InfoLabel'
 
@@ -10,8 +8,6 @@ function Main() {
         <main>
             <div className="container-content">
                 <InfoLabel />
-                {/* <BannerCarousell /> */}
-                {/* <BannerCards /> */}
                 <ContainerBanner TITLE={TITLE2} />
             </div>
         </main>
