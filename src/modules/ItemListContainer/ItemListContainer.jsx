@@ -10,6 +10,8 @@ function ItemListContainer({ title }) {
 
    useEffect(() => {
       const db = getFirestore()
+      const PORT = 8080
+      const URL = `localhost:${PORT}`
       if (categoryId) {
          const queryFilter = query(collection(db, 'items'), where("category", "==", categoryId))
          getDocs(queryFilter)
