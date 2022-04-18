@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from './ItemList/ItemList';
-import { collection, getFirestore, getDocs, query, where } from 'firebase/firestore'
 
 function ItemListContainer({ title }) {
    const { categoryId } = useParams()
@@ -9,19 +8,18 @@ function ItemListContainer({ title }) {
    const [loading, setLoading] = useState(true)
 
    useEffect(() => {
-      const db = getFirestore()
-      const PORT = 8080
-      const URL = `localhost:${PORT}`
+      const URL = 'https://peaceful-sea-84601.herokuapp.com/'
+
       if (categoryId) {
-         const queryFilter = query(collection(db, 'items'), where("category", "==", categoryId))
-         getDocs(queryFilter)
-            .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
-            .then(title("Productos"))
-            .finally(() => setTimeout(() => setLoading(false)), 3000)
-      } else {
-         const queryCollection = query(collection(db, 'items'))
-         getDocs(queryCollection)
-            .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+         //    fetch(`${URL}/products/getAll`)
+         //       .then(res => res.json())
+         //       .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+         //       .then(title("Productos"))
+         //       .finally(() => setTimeout(() => setLoading(false)), 3000)
+         // } else {
+         fetch(`${URL}/products/getAll`)
+            .then(res => console.log(res.json()))
+            .then(res => setProducts(res.map(prod => ({ id: prod.id, ...prod.data() }))))
             .finally(() => setLoading(false))
       }
    }, [categoryId])
