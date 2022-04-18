@@ -16,6 +16,7 @@
         width: 85%;
         margin: auto;
         ul {
+            background-color: white;
             width: 82%;
             height: 82%;
             border: 1px solid #f89922;
@@ -56,6 +57,7 @@
                     @include roboto;
                     font-size: 1rem;
                     color: #f89922;
+                    background-color: white;
                     &:hover {
                         background-color: #f89922;
                         color: white;

@@ -3,7 +3,8 @@
     height: 100%;
     background-color: #f2f3f4;
     h1 {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         height: 3.6rem;
         display: flex;
         justify-content: center;
@@ -11,8 +12,10 @@
         font-size: 1.4rem;
         color: #3f3844;
         @include roboto;
+        background-color: white;
     }
     .products {
+        background-color: white;
         width: 80%;
         height: 100%;
         margin: 0 auto 0 auto;

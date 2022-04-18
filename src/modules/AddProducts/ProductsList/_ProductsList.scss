@@ -4,6 +4,7 @@
     h2 {
         width: 100%;
         height: 2.4rem;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,6 +82,8 @@
                             @include roboto;
                             color: #3f3844;
                             font-size: 1rem;
+                            display: flex;
+                            align-items: center;
                             h6 {
                                 font-weight: bold;
                                 span {
@@ -91,11 +94,10 @@
                         .two {
                             h6 {
                                 width: 45%;
-                                height: 100%;
                             }
                         }
                         .three {
-                            width: 98%;
+                            width: 95%;
                             display: flex;
                             justify-content: space-between;
                         }

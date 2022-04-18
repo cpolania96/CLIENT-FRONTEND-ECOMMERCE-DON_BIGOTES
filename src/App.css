@@ -1804,15 +1804,18 @@ main .container-detail {
   height: 100%;
   background-color: #f2f3f4; }
   #container-addproducts h1 {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height: 3.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
     color: #3f3844;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    background-color: white; }
   #container-addproducts .products {
+    background-color: white;
     width: 80%;
     height: 100%;
     margin: 0 auto 0 auto;
@@ -1835,6 +1838,7 @@ main .container-detail {
     width: 85%;
     margin: auto; }
     .addproducts-form form ul {
+      background-color: white;
       width: 82%;
       height: 82%;
       border: 1px solid #f89922;
@@ -1871,7 +1875,8 @@ main .container-detail {
           border-radius: 4px;
           font-family: 'Roboto', sans-serif;
           font-size: 1rem;
-          color: #f89922; }
+          color: #f89922;
+          background-color: white; }
           .addproducts-form form ul .btn-form input:hover {
             background-color: #f89922;
             color: white; }
@@ -1882,6 +1887,7 @@ main .container-detail {
   .products-list h2 {
     width: 100%;
     height: 2.4rem;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1950,16 +1956,17 @@ main .container-detail {
               padding-left: 5px;
               font-family: 'Roboto', sans-serif;
               color: #3f3844;
-              font-size: 1rem; }
+              font-size: 1rem;
+              display: flex;
+              align-items: center; }
               .products-list .container-products ul li .info ul li h6 {
                 font-weight: bold; }
                 .products-list .container-products ul li .info ul li h6 span {
                   font-weight: lighter; }
             .products-list .container-products ul li .info ul .two h6 {
-              width: 45%;
-              height: 100%; }
+              width: 45%; }
             .products-list .container-products ul li .info ul .three {
-              width: 98%;
+              width: 95%;
               display: flex;
               justify-content: space-between; }
             .products-list .container-products ul li .info ul .description {
