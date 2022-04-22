@@ -8,6 +8,70 @@ html {
   margin: 0;
   padding: 0; }
 
+#lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  #lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px; }
+    #lds-roller div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f89922;
+      margin: -4px 0 0 -4px; }
+    #lds-roller div:nth-child(1) {
+      animation-delay: -0.036s; }
+    #lds-roller div:nth-child(1):after {
+      top: 63px;
+      left: 63px; }
+    #lds-roller div:nth-child(2) {
+      animation-delay: -0.072s; }
+    #lds-roller div:nth-child(2):after {
+      top: 68px;
+      left: 56px; }
+    #lds-roller div:nth-child(3) {
+      animation-delay: -0.108s; }
+    #lds-roller div:nth-child(3):after {
+      top: 71px;
+      left: 48px; }
+    #lds-roller div:nth-child(4) {
+      animation-delay: -0.144s; }
+    #lds-roller div:nth-child(4):after {
+      top: 72px;
+      left: 40px; }
+    #lds-roller div:nth-child(5) {
+      animation-delay: -0.18s; }
+    #lds-roller div:nth-child(5):after {
+      top: 71px;
+      left: 32px; }
+    #lds-roller div:nth-child(6) {
+      animation-delay: -0.216s; }
+    #lds-roller div:nth-child(6):after {
+      top: 68px;
+      left: 24px; }
+    #lds-roller div:nth-child(7) {
+      animation-delay: -0.252s; }
+    #lds-roller div:nth-child(7):after {
+      top: 63px;
+      left: 17px; }
+    #lds-roller div:nth-child(8) {
+      animation-delay: -0.288s; }
+    #lds-roller div:nth-child(8):after {
+      top: 56px;
+      left: 12px; }
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 header {
   width: 100%;
   height: 190px; }
@@ -1881,9 +1945,17 @@ main .container-detail {
             background-color: #f89922;
             color: white; }
 
+#spinner-productslist {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 48%;
+  right: 41%; }
+
 .products-list {
   width: 50%;
-  height: 30rem; }
+  height: 30rem;
+  position: relative; }
   .products-list h2 {
     width: 100%;
     height: 2.4rem;
@@ -1898,7 +1970,15 @@ main .container-detail {
     height: 91%;
     width: 85%;
     margin: 13px auto;
-    border: 1px solid #f89922; }
+    border: 1px solid #f89922;
+    overflow-y: scroll; }
+    .products-list .container-products::-webkit-scrollbar {
+      width: 10px; }
+    .products-list .container-products::-webkit-scrollbar-track {
+      background-color: white; }
+    .products-list .container-products::-webkit-scrollbar-thumb {
+      background-color: #f89922;
+      border-radius: 2px; }
     .products-list .container-products ul {
       width: 100%;
       height: 100%;

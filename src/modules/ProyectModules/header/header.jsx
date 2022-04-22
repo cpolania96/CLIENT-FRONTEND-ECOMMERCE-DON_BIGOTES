@@ -17,7 +17,7 @@ const Header = () => {
                         <Social />
                     </div>
                     <div className="container-second">
-                        <Link to="donbigotes/">
+                        <Link to="/">
                             <div className="container-logo">
                                 <div className="logo"></div>
                             </div>
