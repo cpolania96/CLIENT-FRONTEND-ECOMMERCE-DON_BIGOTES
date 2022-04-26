@@ -30,8 +30,6 @@ const App = () => {
                 </BrowserRouter>
             </CartContextProvider>
         </ProductsContextProvider>
-
-
     )
 }
 

@@ -9,7 +9,7 @@ export const ProductsContextProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const URL = 'https://peaceful-sea-84601.herokuapp.com'
+        const URL = 'https://localhost:8080'
         fetch(`${URL}/api/productos/getAll`)
             .then((res) => {
                 if (res.ok) {

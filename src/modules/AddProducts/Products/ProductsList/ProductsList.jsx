@@ -1,11 +1,12 @@
 import React from 'react'
 import { useContext } from 'react'
-import Spinner1 from '../../../assets/svg/Spinner1'
-import { ProductsContext } from '../../../Context/productsContext'
-import Products from '../Products'
+import Spinner1 from '../../../../assets/animations/spinner1/Spinner1'
+import Products from '../../Products'
+import { ProductsContext } from '../../../../Context/productsContext'
 
 function ProductsList() {
-    const { productsList, loading } = useContext(ProductsContext)
+    const { loading, productsList } = useContext(ProductsContext)
+
     return (
         <div className='products-list'>
             <h2>Lista de productos</h2>

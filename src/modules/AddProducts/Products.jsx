@@ -10,7 +10,7 @@ function Products({ product }) {
                 <button><IconDelete /></button>
             </span>
             <div className='img'>
-                <img src={product.url} alt="" />
+                <img src={product.thumbnail} alt="" />
             </div>
             <div className='info'>
                 <ul>

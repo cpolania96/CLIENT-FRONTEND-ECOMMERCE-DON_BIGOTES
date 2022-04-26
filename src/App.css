@@ -1990,8 +1990,10 @@ main .container-detail {
         border-bottom: 1px solid #f89922;
         display: flex;
         background-color: white; }
+        .products-list .container-products ul li:last-child {
+          border-bottom: none; }
         .products-list .container-products ul li .options {
-          z-index: 1000;
+          z-index: 900;
           width: 59px;
           height: 24px;
           position: absolute;
