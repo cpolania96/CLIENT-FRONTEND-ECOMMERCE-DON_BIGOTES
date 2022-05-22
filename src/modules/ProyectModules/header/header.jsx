@@ -1,6 +1,6 @@
 import React from "react";
 import CartContainer from "../../CartWidget/CartContainer";
-import Menu from "./menu";
+import Menu from "./Menu/Menu";
 import News from "./news";
 import Profile from "../../../assets/svg/profile";
 import Search from "./search";

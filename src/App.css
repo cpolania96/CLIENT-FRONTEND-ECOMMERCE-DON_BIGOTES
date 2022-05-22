@@ -8,6 +8,207 @@ html {
   margin: 0;
   padding: 0; }
 
+.menu-container {
+  width: 65rem;
+  height: 13rem;
+  z-index: 990;
+  position: absolute;
+  display: flex;
+  top: 38px;
+  background-color: #ffffff;
+  transform: translate(-88px, 13px);
+  left: 0;
+  -webkit-box-shadow: -1px 15px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 15px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 15px 18px -10px rgba(0, 0, 0, 0.75); }
+  .menu-container .titles,
+  .menu-container .contents {
+    height: 100%; }
+  .menu-container .titles {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end; }
+    .menu-container .titles ul {
+      width: 90%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none;
+      margin: auto 0;
+      border-right: 1px solid #3f3844; }
+      .menu-container .titles ul li {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center; }
+        .menu-container .titles ul li:last-child {
+          margin-top: 18px; }
+        .menu-container .titles ul li:hover {
+          background-color: #f89922a8;
+          cursor: pointer; }
+        .menu-container .titles ul li h3 {
+          color: #3f3844;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1rem; }
+        .menu-container .titles ul li span {
+          width: 23px;
+          margin-right: 13px;
+          margin-left: 19px;
+          display: flex;
+          align-items: center; }
+          .menu-container .titles ul li span svg {
+            width: 100%; }
+            .menu-container .titles ul li span svg .st0 {
+              fill: #3f3844; }
+  .menu-container .contents {
+    width: 80%; }
+
+.onColor {
+  background-color: #f89922a8; }
+
+.items {
+  width: 9rem;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  .items .btn {
+    width: 100%;
+    height: 77%;
+    background-color: #23b2f8;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer; }
+    .items .btn svg {
+      width: 23px;
+      margin-right: 11px; }
+      .items .btn svg .st0 {
+        fill: white; }
+    .items .btn h6 {
+      font-size: 1rem;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin-right: 8px; }
+
+.options {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px; }
+  .options ul {
+    width: 30%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .options ul:first-child {
+      width: 21%; }
+    .options ul li {
+      width: 51%;
+      margin: auto;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: flex-start; }
+      .options ul li h2 {
+        color: #3f3844; }
+      .options ul li span svg .st0 {
+        fill: #3f3844; }
+    .options ul .title {
+      width: 100%;
+      height: 3rem;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      font-weight: bold; }
+      .options ul .title span {
+        width: 22px;
+        height: 100%;
+        margin-right: 13px; }
+        .options ul .title span svg {
+          height: 100%;
+          width: 100%; }
+      .options ul .title h2 {
+        font-size: 1.3rem; }
+    .options ul .see-more,
+    .options ul .content {
+      width: 20rem; }
+      .options ul .see-more h2,
+      .options ul .content h2 {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 400; }
+        .options ul .see-more h2:hover,
+        .options ul .content h2:hover {
+          text-decoration: underline;
+          cursor: pointer; }
+    .options ul .see-more {
+      margin-top: 7px; }
+      .options ul .see-more h2 {
+        font-weight: bold; }
+
+.container-menu {
+  height: 26%;
+  background-color: #F89922;
+  display: flex;
+  justify-content: center; }
+  .container-menu menu {
+    width: 54rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; }
+    .container-menu menu .list-menu {
+      width: 20%;
+      align-items: center; }
+      .container-menu menu .list-menu .btn-menu {
+        width: 10rem;
+        height: 2.4em;
+        background-color: #1173a3;
+        border-radius: 6px;
+        display: flex;
+        cursor: pointer; }
+        .container-menu menu .list-menu .btn-menu:hover .icon > svg {
+          transform: rotate(180deg);
+          transition: 0.3s; }
+        .container-menu menu .list-menu .btn-menu .img,
+        .container-menu menu .list-menu .btn-menu .label,
+        .container-menu menu .list-menu .btn-menu .icon {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .container-menu menu .list-menu .btn-menu .img {
+          width: 30%; }
+          .container-menu menu .list-menu .btn-menu .img svg {
+            height: auto;
+            width: 28px; }
+            .container-menu menu .list-menu .btn-menu .img svg .st0 {
+              fill: white; }
+        .container-menu menu .list-menu .btn-menu h6 {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          padding-left: 1px;
+          font-size: 1.2rem; }
+        .container-menu menu .list-menu .btn-menu .icon {
+          width: 20%; }
+          .container-menu menu .list-menu .btn-menu .icon svg {
+            height: auto;
+            width: 0.9rem;
+            margin-right: 9px; }
+            .container-menu menu .list-menu .btn-menu .icon svg .st0 {
+              fill: white; }
+
 header {
   width: 100%;
   height: 190px; }
@@ -230,75 +431,6 @@ header {
                   height: auto;
                   width: 12px;
                   transform: rotate(180deg); }
-  header .container-menu {
-    height: 26%;
-    background-color: #F89922;
-    display: flex;
-    justify-content: center; }
-    header .container-menu menu {
-      width: 54rem;
-      height: 100%;
-      display: flex;
-      justify-content: space-between; }
-      header .container-menu menu a {
-        text-decoration: none;
-        width: 12rem; }
-        header .container-menu menu a .items {
-          width: 22%;
-          display: flex;
-          justify-content: center; }
-          header .container-menu menu a .items h6 {
-            font-size: 1rem;
-            color: white;
-            font-family: 'Roboto', sans-serif; }
-        header .container-menu menu a .list-menu {
-          width: 20%;
-          align-items: center; }
-          header .container-menu menu a .list-menu .btn-menu {
-            width: 10rem;
-            height: 2.4em;
-            background-color: #1173a3;
-            border-radius: 6px;
-            display: flex;
-            cursor: pointer; }
-            header .container-menu menu a .list-menu .btn-menu:hover .icon > svg {
-              transform: rotate(180deg);
-              transition: 0.3s; }
-            header .container-menu menu a .list-menu .btn-menu .img,
-            header .container-menu menu a .list-menu .btn-menu .label,
-            header .container-menu menu a .list-menu .btn-menu .icon {
-              height: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center; }
-            header .container-menu menu a .list-menu .btn-menu .img {
-              width: 30%; }
-              header .container-menu menu a .list-menu .btn-menu .img svg {
-                height: auto;
-                width: 28px; }
-                header .container-menu menu a .list-menu .btn-menu .img svg .st0 {
-                  fill: white; }
-            header .container-menu menu a .list-menu .btn-menu h6 {
-              display: flex;
-              align-items: center;
-              width: 50%;
-              padding-left: 1px;
-              font-size: 1.2rem; }
-            header .container-menu menu a .list-menu .btn-menu .icon {
-              width: 20%; }
-              header .container-menu menu a .list-menu .btn-menu .icon svg {
-                height: auto;
-                width: 0.9rem;
-                margin-right: 9px; }
-                header .container-menu menu a .list-menu .btn-menu .icon svg .st0 {
-                  fill: white; }
-        header .container-menu menu a .options {
-          align-items: center;
-          width: 100%;
-          height: 100%; }
-          header .container-menu menu a .options:hover {
-            background-color: #dd810fdb;
-            cursor: pointer; }
 
 main {
   width: 100%;

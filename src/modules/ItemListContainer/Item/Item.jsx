@@ -20,7 +20,7 @@ function Item({ item }) {
                     </div>
                 </Link>
                 <div className="img">
-                    <img src={item.imageURL} alt="" />
+                    <img src={item.thumbnail} alt="" />
                 </div>
                 <div className="descript1">
                     <div className="name">{item.title}</div>
