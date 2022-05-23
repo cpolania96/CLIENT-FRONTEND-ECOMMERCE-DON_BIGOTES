@@ -5,7 +5,7 @@ main {
     justify-content: center;
     background-color: #f2f3f4;
     .container-content {
-        width: 76%;
+        width: 67rem;
         height: 98%;
         background-color: #f8f8ff;
         .info-label {
@@ -651,3 +651,4 @@ main {
     padding-top: 36% !important;
     height: 18%;
 }
+@import "../../Banner/banner";

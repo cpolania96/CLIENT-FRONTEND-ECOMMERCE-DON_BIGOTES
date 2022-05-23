@@ -152,8 +152,10 @@ header {
                     display: flex;
                     justify-content: space-between;
                     margin-right: 11px;
-                    width: 19%;
+                    width: 22%;
                     height: 2.3rem;
+                    a {
+                    }
                     .profile,
                     .track,
                     .container-cart {
@@ -164,7 +166,7 @@ header {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 13%;
+                        width: 20%;
                         a {
                             display: flex;
                             justify-content: center;

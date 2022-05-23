@@ -9,7 +9,7 @@ const Menu = () => {
         if (menuIsVisible) {
             return <Menu_Container setMenuIsVisible={setMenuIsVisible} />
         }
-        return <Menu_Container setMenuIsVisible={setMenuIsVisible} />
+        // return <Menu_Container setMenuIsVisible={setMenuIsVisible} />
     }
     return (
         <menu>

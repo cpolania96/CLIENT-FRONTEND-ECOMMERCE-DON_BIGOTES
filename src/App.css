@@ -75,7 +75,7 @@ html {
   .items .btn {
     width: 100%;
     height: 77%;
-    background-color: #23b2f8;
+    background-color: #1173a3;
     margin: auto 0;
     display: flex;
     justify-content: center;
@@ -84,11 +84,12 @@ html {
     cursor: pointer; }
     .items .btn svg {
       width: 23px;
-      margin-right: 11px; }
+      margin-right: 6px; }
       .items .btn svg .st0 {
         fill: white; }
     .items .btn h6 {
-      font-size: 1rem;
+      font-size: 1.2rem;
+      font-weight: lighter;
       color: white;
       font-family: 'Roboto', sans-serif;
       margin-right: 8px; }
@@ -155,6 +156,15 @@ html {
       margin-top: 7px; }
       .options ul .see-more h2 {
         font-weight: bold; }
+
+.message-no-unt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #3f3844; }
 
 .container-menu {
   height: 26%;
@@ -340,7 +350,7 @@ header {
           display: flex;
           justify-content: space-between;
           margin-right: 11px;
-          width: 19%;
+          width: 22%;
           height: 2.3rem; }
           header .container-principal .principal .container-second .container-tools .profile,
           header .container-principal .principal .container-second .container-tools .track,
@@ -351,7 +361,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 13%; }
+            width: 20%; }
             header .container-principal .principal .container-second .container-tools .profile a,
             header .container-principal .principal .container-second .container-tools .track a {
               display: flex;
@@ -439,7 +449,7 @@ main {
   justify-content: center;
   background-color: #f2f3f4; }
   main .container-content {
-    width: 76%;
+    width: 67rem;
     height: 98%;
     background-color: #f8f8ff; }
     main .container-content .info-label {
@@ -976,6 +986,65 @@ main {
 #empty-label {
   padding-top: 36% !important;
   height: 18%; }
+
+.banner-principal {
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  background-color: white;
+  overflow: hidden; }
+  .banner-principal .slideshow {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 20;
+    transition: 0.3s ease all; }
+    .banner-principal .slideshow .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative; }
+      .banner-principal .slideshow .slide p {
+        width: 100%;
+        height: 4rem;
+        background-color: rgba(0, 0, 0, 0.315);
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff; }
+        @media screen and (max-width: 700px) {
+          .banner-principal .slideshow .slide p {
+            position: relative;
+            background-color: red; } }
+      .banner-principal .slideshow .slide .buttons {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0; }
+        .banner-principal .slideshow .slide .buttons button {
+          height: 100%;
+          width: 8%;
+          position: absolute;
+          background-color: transparent;
+          border: none;
+          cursor: pointer; }
+          .banner-principal .slideshow .slide .buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.205); }
+          .banner-principal .slideshow .slide .buttons button svg .st0 {
+            fill: white;
+            -webkit-box-shadow: 14px 14px 64px -12px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 14px 14px 64px -12px rgba(0, 0, 0, 0.75);
+            box-shadow: 14px 14px 64px -12px rgba(0, 0, 0, 0.75); }
+          .banner-principal .slideshow .slide .buttons button:first-child {
+            left: 0px; }
+          .banner-principal .slideshow .slide .buttons button:last-child {
+            right: 0px; }
 
 main .container-detail {
   width: 76%;

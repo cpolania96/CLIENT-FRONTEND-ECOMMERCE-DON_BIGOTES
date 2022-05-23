@@ -80,3 +80,13 @@
         }
     }
 }
+
+.message-no-unt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include roboto;
+    color: #3f3844;
+}

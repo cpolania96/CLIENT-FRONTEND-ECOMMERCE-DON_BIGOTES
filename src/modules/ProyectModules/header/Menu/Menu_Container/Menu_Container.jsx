@@ -62,6 +62,10 @@ function Menu_Container({ setMenuIsVisible }) {
             return <Options info={menuCats} setKeepVisible={setKeepVisibleCat} />
         } else if (showMenuDog || keepVisibleDog) {
             return <Options info={menuDogs} setKeepVisible={setKeepVisibleDog} />
+        } else {
+            return (
+                <h2 className='message-no-unt'>Hola! Elige una opción</h2>
+            )
         }
         // return <Options info={menuCats} setKeepVisible={setKeepVisibleCat} />
     }
